@@ -1,7 +1,7 @@
 """Compara el modelo SIN suelo (referencia guardada) contra la corrida actual CON suelo.
 
-Uso (despues de `manage.py paso_soilgrids` y luego `manage.py run_pipeline --desde 5`):
-    python manage.py comparar_suelo
+Uso (despues de `python -m pipeline.pasos.paso05b_soilgrids` y luego `python -m pipeline.run_pipeline --desde 5`):
+    python -m pipeline.comparar_suelo
 
 Lee:
   referencia_sin_suelo/   resultados de la version sin suelo (vienen en el zip)
@@ -96,7 +96,7 @@ def main():
         print(f"VEREDICTO: NO ADOPTAR SUELO. Cambio de RMSE {delta_ens:+.3f} t/ha, "
               f"por debajo del umbral de {UMBRAL_MEJORA} o sin respaldo en la ablacion.")
         print("Para volver a la version sin suelo: borra salidas/suelo_parcela.csv "
-              "y corre de nuevo `manage.py run_pipeline --desde 5`.")
+              "y corre de nuevo `python -m pipeline.run_pipeline --desde 5`.")
     print("=" * 64)
 
 

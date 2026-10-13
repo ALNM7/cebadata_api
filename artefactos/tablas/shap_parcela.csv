@@ -1,0 +1,1577 @@
+id,orden,variable,etiqueta,valor_variable,unidad,contribucion
+AGC_001,1,prec_mm_m05,Lluvia de mayo,196.23643,mm,-0.311
+AGC_001,2,lon,Longitud,-98.56208,°,-0.215
+AGC_001,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00019,por día,-0.078
+AGC_001,4,nddi_doy_pico,Día del pico de NDDI,148.0,,-0.063
+AGC_001,5,prec_mm_m04,Lluvia de abril,23.04369,mm,-0.059
+AGC_001,6,tmax_c_m04,Temperatura máxima de abril,26.08275,°C,-0.056
+AGC_001,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.038
+AGC_001,8,ndvi_auc_2023,NDVI acumulado 2023,2.1039,,0.022
+AGC_002,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.195
+AGC_002,2,lon,Longitud,-98.2529,°,0.104
+AGC_002,3,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00144,por día,-0.039
+AGC_002,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.029
+AGC_002,5,pendiente_grados,Pendiente del terreno,0.55678,°,-0.028
+AGC_002,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00103,por día,0.027
+AGC_002,7,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00161,por día,-0.025
+AGC_002,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00332,por día,-0.024
+AGC_003,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.344
+AGC_003,2,lon,Longitud,-98.375,°,0.109
+AGC_003,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.065
+AGC_003,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),276.0,,-0.034
+AGC_003,5,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.034
+AGC_003,6,ndti_doy_pico,Día del pico de NDTI,277.0,,-0.033
+AGC_003,7,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00121,por día,-0.029
+AGC_003,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00793,por día,0.029
+AGC_004,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.373
+AGC_004,2,lon,Longitud,-98.53671,°,-0.243
+AGC_004,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.084
+AGC_004,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.054
+AGC_004,5,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00103,por día,-0.034
+AGC_004,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00452,por día,-0.033
+AGC_004,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00371,por día,0.03
+AGC_004,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00262,por día,-0.025
+AGC_005,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.193
+AGC_005,2,lon,Longitud,-98.2441,°,0.102
+AGC_005,3,ndwi_pico,NDWI máximo,0.43719,,-0.044
+AGC_005,4,dswi5_pico,DSWI5 máximo,2.5286,,-0.043
+AGC_005,5,crc_tasa_senescencia,Velocidad de senescencia CRC,-0.00079,por día,-0.036
+AGC_005,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00393,por día,-0.034
+AGC_005,7,prec_mm_m04,Lluvia de abril,9.67741,mm,0.031
+AGC_005,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00228,por día,0.03
+AGC_006,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.224
+AGC_006,2,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01431,por día,-0.133
+AGC_006,3,lon,Longitud,-98.23634,°,0.126
+AGC_006,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00306,por día,-0.035
+AGC_006,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.035
+AGC_006,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00491,por día,0.028
+AGC_006,7,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.025
+AGC_006,8,ndsvi_tasa_verdeo,Velocidad de verdeo NDSVI,0.00185,por día,-0.024
+AGC_007,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.285
+AGC_007,2,lon,Longitud,-98.41559,°,-0.198
+AGC_007,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.062
+AGC_007,4,ndsvi_pico,NDSVI máximo,0.5316,,0.035
+AGC_007,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01934,por día,-0.033
+AGC_007,6,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.032
+AGC_007,7,msi_auc,Integral de MSI,1.66327,,0.029
+AGC_007,8,ndvi_auc,Integral de NDVI,0.86858,,0.018
+AGC_008,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00018,por día,-0.243
+AGC_008,2,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.168
+AGC_008,3,lon,Longitud,-98.27165,°,0.099
+AGC_008,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00012,por día,-0.079
+AGC_008,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00261,por día,-0.073
+AGC_008,6,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.054
+AGC_008,7,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00282,por día,-0.051
+AGC_008,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.038
+AGC_009,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.201
+AGC_009,2,lon,Longitud,-98.27688,°,0.12
+AGC_009,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00243,por día,0.058
+AGC_009,4,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00083,por día,-0.039
+AGC_009,5,prec_mm_m04,Lluvia de abril,11.75043,mm,0.034
+AGC_009,6,mcrc_doy_pico,Día del pico de MCRC,301.0,,-0.031
+AGC_009,7,crc_auc,Integral de CRC,0.6147,,-0.028
+AGC_009,8,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.027
+AGC_010,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.196
+AGC_010,2,lon,Longitud,-98.26393,°,0.115
+AGC_010,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00255,por día,0.079
+AGC_010,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00024,por día,-0.042
+AGC_010,5,pendiente_grados,Pendiente del terreno,0.45864,°,-0.04
+AGC_010,6,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00208,por día,-0.032
+AGC_010,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.028
+AGC_010,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00318,por día,-0.028
+AGC_011,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.237
+AGC_011,2,lon,Longitud,-98.20904,°,0.13
+AGC_011,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00241,por día,0.061
+AGC_011,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.044
+AGC_011,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00165,por día,0.039
+AGC_011,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00305,por día,-0.035
+AGC_011,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00643,por día,0.026
+AGC_011,8,pendiente_grados,Pendiente del terreno,4.39488,°,0.025
+AGC_012,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.233
+AGC_012,2,lon,Longitud,-98.23827,°,0.143
+AGC_012,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00238,por día,0.088
+AGC_012,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0028,por día,0.053
+AGC_012,5,fapar_doy_pico,Día del pico de FAPAR,240.0,,-0.052
+AGC_012,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.039
+AGC_012,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00375,por día,0.027
+AGC_012,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.025
+AGC_013,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.206
+AGC_013,2,lon,Longitud,-98.23669,°,0.116
+AGC_013,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01518,por día,-0.115
+AGC_013,4,ndti_doy_pico,Día del pico de NDTI,275.0,,-0.041
+AGC_013,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00315,por día,-0.04
+AGC_013,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.039
+AGC_013,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00176,por día,0.036
+AGC_013,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00473,por día,0.033
+AGC_014,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.213
+AGC_014,2,lon,Longitud,-98.26331,°,0.116
+AGC_014,3,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00013,por día,-0.073
+AGC_014,4,pendiente_grados,Pendiente del terreno,0.67612,°,-0.036
+AGC_014,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00405,por día,-0.024
+AGC_014,6,prec_mm_m04,Lluvia de abril,11.75078,mm,0.023
+AGC_014,7,fapar_doy_pico,Día del pico de FAPAR,218.0,,-0.02
+AGC_014,8,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0007,por día,-0.017
+AGC_015,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.247
+AGC_015,2,lon,Longitud,-98.23742,°,0.152
+AGC_015,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.058
+AGC_015,4,AREA_HA,Área de la parcela,1.97,ha,0.044
+AGC_015,5,pendiente_grados,Pendiente del terreno,2.83424,°,0.033
+AGC_015,6,mun_Chignahuapan,Municipio Chignahuapan,1.0,sí/no,0.028
+AGC_015,7,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00226,por día,0.023
+AGC_015,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.023
+AGC_016,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.219
+AGC_016,2,lon,Longitud,-98.25326,°,0.122
+AGC_016,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00297,por día,0.037
+AGC_016,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.035
+AGC_016,5,pendiente_grados,Pendiente del terreno,0.58624,°,-0.03
+AGC_016,6,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00172,por día,-0.028
+AGC_016,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00272,por día,-0.027
+AGC_016,8,ndsvi_tasa_verdeo,Velocidad de verdeo NDSVI,0.00185,por día,-0.022
+AGC_017,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.247
+AGC_017,2,lon,Longitud,-98.24129,°,0.151
+AGC_017,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00146,por día,0.071
+AGC_017,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00248,por día,0.06
+AGC_017,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.045
+AGC_017,6,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.03
+AGC_017,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00116,por día,0.027
+AGC_017,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00242,por día,-0.02
+AGC_018,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.218
+AGC_018,2,lon,Longitud,-98.29548,°,0.117
+AGC_018,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00214,por día,0.039
+AGC_018,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.034
+AGC_018,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00599,por día,0.032
+AGC_018,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00339,por día,-0.028
+AGC_018,7,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.025
+AGC_018,8,fapar_doy_pico,Día del pico de FAPAR,209.0,,-0.024
+AGC_019,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.329
+AGC_019,2,lon,Longitud,-98.58576,°,-0.196
+AGC_019,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.057
+AGC_019,4,ndsvi_pico,NDSVI máximo,0.53047,,0.046
+AGC_019,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01824,por día,-0.044
+AGC_019,6,evi_auc,Integral de EVI,0.684,,0.038
+AGC_019,7,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.033
+AGC_019,8,evi_pico,EVI máximo,0.79479,,0.03
+AGC_020,1,prec_mm_m05,Lluvia de mayo,157.26573,mm,-0.299
+AGC_020,2,lon,Longitud,-98.58611,°,-0.194
+AGC_020,3,prec_mm_m04,Lluvia de abril,14.67236,mm,-0.043
+AGC_020,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01961,por día,-0.041
+AGC_020,5,tmax_c_m04,Temperatura máxima de abril,26.21819,°C,-0.033
+AGC_020,6,ndsvi_pico,NDSVI máximo,0.55775,,0.032
+AGC_020,7,crc_pico,CRC máximo,0.44865,,0.032
+AGC_020,8,nddi_doy_pico,Día del pico de NDDI,167.0,,-0.024
+AGC_021,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.236
+AGC_021,2,lon,Longitud,-98.21793,°,0.139
+AGC_021,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00251,por día,0.106
+AGC_021,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),266.0,,-0.088
+AGC_021,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.01297,por día,0.04
+AGC_021,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.039
+AGC_021,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00382,por día,0.038
+AGC_021,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.029
+AGC_022,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.219
+AGC_022,2,lon,Longitud,-98.26704,°,0.126
+AGC_022,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00205,por día,0.039
+AGC_022,4,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00217,por día,-0.032
+AGC_022,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00277,por día,-0.031
+AGC_022,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00088,por día,-0.031
+AGC_022,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.029
+AGC_022,8,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.023
+AGC_023,1,prec_mm_m05,Lluvia de mayo,142.38895,mm,-0.357
+AGC_023,2,lon,Longitud,-98.52314,°,-0.235
+AGC_023,3,tmax_c_m04,Temperatura máxima de abril,26.14719,°C,-0.047
+AGC_023,4,nddi_pico,NDDI máximo,0.13317,,0.037
+AGC_023,5,prec_mm_m04,Lluvia de abril,11.36275,mm,0.029
+AGC_023,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00139,por día,0.027
+AGC_023,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00029,por día,-0.026
+AGC_023,8,mcrc_doy_pico,Día del pico de MCRC,304.0,,-0.022
+AGC_024,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.206
+AGC_024,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.156
+AGC_024,3,lon,Longitud,-98.27286,°,0.108
+AGC_024,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01407,por día,-0.083
+AGC_024,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00282,por día,-0.037
+AGC_024,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_024,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00343,por día,-0.033
+AGC_024,8,ndsvi_auc,Integral de NDSVI,0.81255,,0.03
+AGC_025,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.42
+AGC_025,2,lon,Longitud,-98.5369,°,-0.247
+AGC_025,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.075
+AGC_025,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00239,por día,0.066
+AGC_025,5,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.058
+AGC_025,6,tmin_c_m04,Temperatura mínima de abril,9.50297,°C,-0.035
+AGC_025,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0043,por día,-0.028
+AGC_025,8,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.027
+AGC_026,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.232
+AGC_026,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.166
+AGC_026,3,lon,Longitud,-98.24988,°,0.136
+AGC_026,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00259,por día,0.076
+AGC_026,5,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),289.0,,-0.044
+AGC_026,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.042
+AGC_026,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00336,por día,-0.039
+AGC_026,8,fapar_doy_pico,Día del pico de FAPAR,278.0,,0.036
+AGC_027,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.321
+AGC_027,2,lon,Longitud,-98.53765,°,-0.193
+AGC_027,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.061
+AGC_027,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.044
+AGC_027,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01549,por día,-0.043
+AGC_027,6,evi_auc,Integral de EVI,0.7133,,0.043
+AGC_027,7,ndsvi_pico,NDSVI máximo,0.52883,,0.03
+AGC_027,8,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.027
+AGC_028,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.231
+AGC_028,2,lon,Longitud,-98.26009,°,0.142
+AGC_028,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00201,por día,0.096
+AGC_028,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00228,por día,0.09
+AGC_028,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.043
+AGC_028,6,fapar_doy_pico,Día del pico de FAPAR,272.0,,0.04
+AGC_028,7,pendiente_grados,Pendiente del terreno,8.14355,°,0.032
+AGC_028,8,tmin_c_m04,Temperatura mínima de abril,11.31288,°C,0.032
+AGC_029,1,prec_mm_m05,Lluvia de mayo,196.23643,mm,-0.32
+AGC_029,2,lon,Longitud,-98.55662,°,-0.193
+AGC_029,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00012,por día,-0.072
+AGC_029,4,prec_mm_m04,Lluvia de abril,23.04369,mm,-0.064
+AGC_029,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00241,por día,0.058
+AGC_029,6,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),257.0,,0.049
+AGC_029,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.045
+AGC_029,8,tmin_c_m04,Temperatura mínima de abril,9.26127,°C,-0.034
+AGC_030,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.414
+AGC_030,2,lon,Longitud,-98.41029,°,-0.25
+AGC_030,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.096
+AGC_030,4,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.04
+AGC_030,5,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00095,por día,-0.035
+AGC_030,6,tmin_c_m04,Temperatura mínima de abril,10.51591,°C,-0.03
+AGC_030,7,crc_pico,CRC máximo,0.48366,,0.03
+AGC_030,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00455,por día,-0.028
+AGC_031,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.201
+AGC_031,2,lon,Longitud,-98.26597,°,0.121
+AGC_031,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00187,por día,0.07
+AGC_031,4,pendiente_grados,Pendiente del terreno,0.49552,°,-0.042
+AGC_031,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.04
+AGC_031,6,mcrc_auc,Integral de MCRC,0.56595,,-0.038
+AGC_031,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00265,por día,-0.034
+AGC_031,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00206,por día,-0.024
+AGC_032,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.238
+AGC_032,2,lon,Longitud,-98.2564,°,0.137
+AGC_032,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.0147,por día,-0.102
+AGC_032,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.041
+AGC_032,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00202,por día,0.036
+AGC_032,6,pendiente_grados,Pendiente del terreno,5.27535,°,0.027
+AGC_032,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00624,por día,0.025
+AGC_032,8,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.021
+AGC_033,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.247
+AGC_033,2,lon,Longitud,-98.20025,°,0.159
+AGC_033,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00232,por día,0.134
+AGC_033,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.047
+AGC_033,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00109,por día,0.034
+AGC_033,6,pendiente_grados,Pendiente del terreno,6.47466,°,0.033
+AGC_033,7,fapar_doy_pico,Día del pico de FAPAR,261.0,,0.031
+AGC_033,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.029
+AGC_034,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.333
+AGC_034,2,lon,Longitud,-98.3849,°,-0.111
+AGC_034,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.053
+AGC_034,4,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.038
+AGC_034,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00167,por día,0.031
+AGC_034,6,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00171,por día,-0.027
+AGC_034,7,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.01951,por día,0.025
+AGC_034,8,ndti_doy_pico,Día del pico de NDTI,274.0,,-0.025
+AGC_035,1,prec_mm_m05,Lluvia de mayo,124.16184,mm,0.238
+AGC_035,2,lon,Longitud,-98.36257,°,0.123
+AGC_035,3,tmax_c_m04,Temperatura máxima de abril,25.95952,°C,-0.068
+AGC_035,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00238,por día,0.042
+AGC_035,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00052,por día,-0.036
+AGC_035,6,pendiente_grados,Pendiente del terreno,0.28265,°,-0.034
+AGC_035,7,prec_mm_m04,Lluvia de abril,10.39498,mm,0.03
+AGC_035,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00305,por día,-0.029
+AGC_036,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.18
+AGC_036,2,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.164
+AGC_036,3,lon,Longitud,-98.2516,°,0.095
+AGC_036,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00247,por día,0.075
+AGC_036,5,pendiente_grados,Pendiente del terreno,0.72326,°,-0.039
+AGC_036,6,crc_tasa_verdeo,Velocidad de verdeo CRC,9e-05,por día,-0.034
+AGC_036,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.027
+AGC_036,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00255,por día,-0.026
+AGC_037,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.427
+AGC_037,2,lon,Longitud,-98.53209,°,-0.27
+AGC_037,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.09
+AGC_037,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.069
+AGC_037,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00566,por día,-0.035
+AGC_037,6,tmax_c_m05,Temperatura máxima de mayo,25.82256,°C,-0.024
+AGC_037,7,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00217,por día,-0.023
+AGC_037,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00489,por día,0.023
+AGC_038,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.364
+AGC_038,2,lon,Longitud,-98.38998,°,-0.244
+AGC_038,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.06
+AGC_038,4,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.031
+AGC_038,5,nddi_doy_pico,Día del pico de NDDI,150.0,,-0.031
+AGC_038,6,msi_auc,Integral de MSI,1.76566,,0.031
+AGC_038,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00393,por día,-0.029
+AGC_038,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00049,por día,-0.021
+AGC_039,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.308
+AGC_039,2,lon,Longitud,-98.59606,°,-0.197
+AGC_039,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00012,por día,-0.075
+AGC_039,4,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.058
+AGC_039,5,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.046
+AGC_039,6,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.043
+AGC_039,7,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01541,por día,-0.034
+AGC_039,8,nddi_doy_pico,Día del pico de NDDI,168.0,,-0.027
+AGC_040,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.342
+AGC_040,2,lon,Longitud,-98.53797,°,-0.214
+AGC_040,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0002,por día,-0.094
+AGC_040,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.061
+AGC_040,5,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.061
+AGC_040,6,nddi_doy_pico,Día del pico de NDDI,211.0,,-0.038
+AGC_040,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00037,por día,-0.035
+AGC_040,8,ndti_doy_pico,Día del pico de NDTI,274.0,,-0.035
+AGC_041,1,prec_mm_m05,Lluvia de mayo,126.80244,mm,-0.356
+AGC_041,2,lon,Longitud,-98.39377,°,-0.225
+AGC_041,3,prec_mm_m06,Lluvia de junio,314.07169,mm,-0.04
+AGC_041,4,prec_mm_m04,Lluvia de abril,11.17277,mm,0.031
+AGC_041,5,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00286,por día,-0.024
+AGC_041,6,nddi_doy_pico,Día del pico de NDDI,151.0,,-0.021
+AGC_041,7,prec_anomalia,Anomalía de lluvia del ciclo,441.51218,mm,-0.021
+AGC_041,8,prec_mm_m07,Lluvia de julio,181.86676,mm,-0.02
+AGC_042,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.39
+AGC_042,2,lon,Longitud,-98.38853,°,-0.236
+AGC_042,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.082
+AGC_042,4,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00335,por día,-0.038
+AGC_042,5,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.037
+AGC_042,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00389,por día,-0.03
+AGC_042,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00144,por día,0.022
+AGC_042,8,tmin_c_m04,Temperatura mínima de abril,11.08938,°C,-0.022
+AGC_043,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.182
+AGC_043,2,lon,Longitud,-98.2605,°,0.098
+AGC_043,3,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),292.0,,-0.063
+AGC_043,4,ndti_doy_pico,Día del pico de NDTI,283.0,,-0.054
+AGC_043,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00158,por día,0.053
+AGC_043,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00309,por día,-0.047
+AGC_043,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00106,por día,0.036
+AGC_043,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00047,por día,-0.032
+AGC_044,1,prec_mm_m05,Lluvia de mayo,157.26573,mm,-0.35
+AGC_044,2,lon,Longitud,-98.58625,°,-0.235
+AGC_044,3,prec_mm_m04,Lluvia de abril,14.67236,mm,-0.06
+AGC_044,4,tmax_c_m04,Temperatura máxima de abril,26.21819,°C,-0.037
+AGC_044,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01573,por día,-0.036
+AGC_044,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00462,por día,-0.036
+AGC_044,7,tmin_c_m04,Temperatura mínima de abril,9.38864,°C,-0.031
+AGC_044,8,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00214,por día,-0.021
+AGC_045,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.231
+AGC_045,2,lon,Longitud,-98.29403,°,0.117
+AGC_045,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00217,por día,0.035
+AGC_045,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.032
+AGC_045,5,ndvi_auc_2023,NDVI acumulado 2023,2.14517,,0.025
+AGC_045,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00317,por día,-0.025
+AGC_045,7,mcrc_doy_pico,Día del pico de MCRC,150.0,,-0.023
+AGC_045,8,ndti_doy_pico,Día del pico de NDTI,240.0,,0.023
+AGC_046,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.317
+AGC_046,2,lon,Longitud,-98.5585,°,-0.22
+AGC_046,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.068
+AGC_046,4,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.04
+AGC_046,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01502,por día,-0.04
+AGC_046,6,ndvi_auc_2023,NDVI acumulado 2023,2.07343,,0.034
+AGC_046,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00026,por día,0.031
+AGC_046,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00042,por día,-0.026
+AGC_047,1,lon,Longitud,-98.39376,°,-0.417
+AGC_047,2,prec_mm_m05,Lluvia de mayo,101.8485,mm,0.126
+AGC_047,3,tmax_c_m04,Temperatura máxima de abril,25.92621,°C,-0.056
+AGC_047,4,prec_mm_m04,Lluvia de abril,9.50886,mm,0.026
+AGC_047,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00196,por día,0.026
+AGC_047,6,evi_auc,Integral de EVI,0.68687,,0.023
+AGC_047,7,ndsvi_pico,NDSVI máximo,0.5232,,0.023
+AGC_047,8,ndsvi_auc,Integral de NDSVI,0.84221,,0.022
+AGC_048,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.351
+AGC_048,2,lon,Longitud,-98.51739,°,-0.231
+AGC_048,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.058
+AGC_048,4,ndvi_auc_2023,NDVI acumulado 2023,2.04698,,0.044
+AGC_048,5,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.041
+AGC_048,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00025,por día,-0.032
+AGC_048,7,nddi_doy_pico,Día del pico de NDDI,148.0,,-0.028
+AGC_048,8,ndti_doy_pico,Día del pico de NDTI,269.0,,-0.028
+AGC_049,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.242
+AGC_049,2,lon,Longitud,-98.23601,°,0.142
+AGC_049,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00187,por día,0.103
+AGC_049,4,nddi_doy_pico,Día del pico de NDDI,106.0,,-0.045
+AGC_049,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_049,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00249,por día,0.037
+AGC_049,7,pendiente_grados,Pendiente del terreno,6.88037,°,0.032
+AGC_049,8,fapar_doy_pico,Día del pico de FAPAR,273.0,,0.032
+AGC_050,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.344
+AGC_050,2,lon,Longitud,-98.59011,°,-0.195
+AGC_050,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.053
+AGC_050,4,evi_auc,Integral de EVI,0.70319,,0.048
+AGC_050,5,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.047
+AGC_050,6,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01771,por día,-0.04
+AGC_050,7,nddi_doy_pico,Día del pico de NDDI,165.0,,-0.04
+AGC_050,8,ndsvi_pico,NDSVI máximo,0.52405,,0.028
+AGC_051,1,prec_mm_m05,Lluvia de mayo,102.26563,mm,0.234
+AGC_051,2,lon,Longitud,-98.34781,°,0.134
+AGC_051,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0026,por día,0.05
+AGC_051,4,prec_mm_m04,Lluvia de abril,10.17188,mm,0.037
+AGC_051,5,ndsvi_auc,Integral de NDSVI,0.79267,,0.032
+AGC_051,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00193,por día,0.031
+AGC_051,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00496,por día,0.026
+AGC_051,8,AREA_HA,Área de la parcela,11.12,ha,-0.022
+AGC_052,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.232
+AGC_052,2,lon,Longitud,-98.27873,°,0.129
+AGC_052,3,prec_mm_m04,Lluvia de abril,11.75043,mm,0.039
+AGC_052,4,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00188,por día,-0.027
+AGC_052,5,mcrc_tasa_senescencia,Velocidad de senescencia MCRC,-3e-05,por día,-0.025
+AGC_052,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00339,por día,-0.023
+AGC_052,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00092,por día,0.02
+AGC_052,8,tmax_c_m04,Temperatura máxima de abril,25.8631,°C,0.019
+AGC_053,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.289
+AGC_053,2,lon,Longitud,-98.52229,°,-0.221
+AGC_053,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00224,por día,0.087
+AGC_053,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00013,por día,-0.08
+AGC_053,5,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.069
+AGC_053,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.063
+AGC_053,7,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),258.0,,0.045
+AGC_053,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0003,por día,-0.025
+AGC_054,1,prec_mm_m05,Lluvia de mayo,171.95721,mm,-0.348
+AGC_054,2,lon,Longitud,-98.53681,°,-0.233
+AGC_054,3,prec_mm_m04,Lluvia de abril,16.4313,mm,-0.066
+AGC_054,4,ndti_doy_pico,Día del pico de NDTI,273.0,,-0.042
+AGC_054,5,tmax_c_m04,Temperatura máxima de abril,26.09061,°C,-0.039
+AGC_054,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00508,por día,-0.038
+AGC_054,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00352,por día,-0.033
+AGC_054,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0004,por día,-0.027
+AGC_055,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.227
+AGC_055,2,lon,Longitud,-98.21787,°,0.133
+AGC_055,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00252,por día,0.125
+AGC_055,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00243,por día,0.05
+AGC_055,5,fapar_pico,FAPAR máximo,0.4993,,-0.041
+AGC_055,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_055,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00398,por día,0.038
+AGC_055,8,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00333,por día,-0.029
+AGC_056,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.242
+AGC_056,2,lon,Longitud,-98.2068,°,0.145
+AGC_056,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00259,por día,-0.057
+AGC_056,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.044
+AGC_056,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00121,por día,0.041
+AGC_056,6,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.027
+AGC_056,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00381,por día,-0.022
+AGC_056,8,nddi_doy_pico,Día del pico de NDDI,100.0,,0.022
+AGC_057,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.207
+AGC_057,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0002,por día,-0.201
+AGC_057,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00203,por día,0.171
+AGC_057,4,lon,Longitud,-98.24934,°,0.133
+AGC_057,5,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00334,por día,-0.058
+AGC_057,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00327,por día,-0.047
+AGC_057,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00011,por día,-0.043
+AGC_057,8,prec_mm_m04,Lluvia de abril,9.67741,mm,0.036
+AGC_058,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.291
+AGC_058,2,lon,Longitud,-98.53598,°,-0.212
+AGC_058,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00024,por día,-0.087
+AGC_058,4,crc_pico,CRC máximo,0.45304,,0.068
+AGC_058,5,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.06
+AGC_058,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.036
+AGC_058,7,ndvi_tasa_verdeo,Velocidad de verdeo NDVI,0.00302,por día,0.029
+AGC_058,8,ndti_doy_pico,Día del pico de NDTI,273.0,,-0.027
+AGC_059,1,prec_mm_m05,Lluvia de mayo,102.92899,mm,0.198
+AGC_059,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00018,por día,-0.197
+AGC_059,3,lon,Longitud,-98.26525,°,0.12
+AGC_059,4,ndsvi_auc,Integral de NDSVI,0.79737,,0.038
+AGC_059,5,prec_mm_m04,Lluvia de abril,10.78487,mm,0.035
+AGC_059,6,AREA_HA,Área de la parcela,19.53,ha,-0.025
+AGC_059,7,ndvi_auc_2023,NDVI acumulado 2023,2.37503,,0.025
+AGC_059,8,dswi5_pico,DSWI5 máximo,2.14563,,-0.02
+AGC_060,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.236
+AGC_060,2,lon,Longitud,-98.25543,°,0.172
+AGC_060,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00209,por día,0.147
+AGC_060,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00134,por día,0.093
+AGC_060,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.041
+AGC_060,6,pendiente_grados,Pendiente del terreno,8.93087,°,0.034
+AGC_060,7,fapar_doy_pico,Día del pico de FAPAR,224.0,,-0.034
+AGC_060,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00486,por día,0.034
+AGC_061,1,prec_mm_m05,Lluvia de mayo,226.80118,mm,-0.36
+AGC_061,2,lon,Longitud,-98.61153,°,-0.219
+AGC_061,3,prec_mm_m04,Lluvia de abril,23.79278,mm,-0.073
+AGC_061,4,tmax_c_m04,Temperatura máxima de abril,26.10379,°C,-0.042
+AGC_061,5,msi_auc,Integral de MSI,1.85897,,0.039
+AGC_061,6,nddi_doy_pico,Día del pico de NDDI,156.0,,-0.033
+AGC_061,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00442,por día,-0.027
+AGC_061,8,tmin_c_m04,Temperatura mínima de abril,9.05578,°C,-0.024
+AGC_062,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.208
+AGC_062,2,lon,Longitud,-98.27239,°,0.132
+AGC_062,3,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),292.0,,-0.044
+AGC_062,4,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.042
+AGC_062,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.04
+AGC_062,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00175,por día,0.04
+AGC_062,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00153,por día,-0.039
+AGC_062,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00489,por día,0.035
+AGC_063,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.198
+AGC_063,2,lon,Longitud,-98.27773,°,0.121
+AGC_063,3,pendiente_grados,Pendiente del terreno,1.34816,°,-0.064
+AGC_063,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),288.0,,-0.062
+AGC_063,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00284,por día,-0.049
+AGC_063,6,ndti_doy_pico,Día del pico de NDTI,279.0,,-0.044
+AGC_063,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.033
+AGC_063,8,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.0032,por día,-0.033
+AGC_064,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.248
+AGC_064,2,lon,Longitud,-98.2757,°,0.139
+AGC_064,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00235,por día,0.088
+AGC_064,4,fapar_doy_pico,Día del pico de FAPAR,219.0,,-0.042
+AGC_064,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00402,por día,0.041
+AGC_064,6,prec_mm_m04,Lluvia de abril,11.75043,mm,0.037
+AGC_064,7,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00177,por día,-0.037
+AGC_064,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0033,por día,-0.031
+AGC_065,1,prec_mm_m05,Lluvia de mayo,102.26563,mm,0.183
+AGC_065,2,lon,Longitud,-98.34134,°,0.104
+AGC_065,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01481,por día,-0.083
+AGC_065,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00244,por día,0.026
+AGC_065,5,prec_mm_m04,Lluvia de abril,10.17188,mm,0.026
+AGC_065,6,evi_auc,Integral de EVI,0.84224,,0.022
+AGC_065,7,ndvi_auc_2023,NDVI acumulado 2023,2.18233,,0.021
+AGC_065,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00361,por día,-0.02
+AGC_066,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.389
+AGC_066,2,lon,Longitud,-98.522,°,-0.259
+AGC_066,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00246,por día,0.1
+AGC_066,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00198,por día,0.08
+AGC_066,5,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.059
+AGC_066,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.052
+AGC_066,7,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.028
+AGC_066,8,nddi_doy_pico,Día del pico de NDDI,152.0,,-0.025
+AGC_067,1,prec_mm_m05,Lluvia de mayo,129.37352,mm,-0.372
+AGC_067,2,lon,Longitud,-98.40854,°,-0.222
+AGC_067,3,ndsvi_pico,NDSVI máximo,0.53862,,0.063
+AGC_067,4,prec_mm_m06,Lluvia de junio,366.06265,mm,-0.04
+AGC_067,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0047,por día,0.04
+AGC_067,6,prec_mm_m04,Lluvia de abril,11.30961,mm,0.038
+AGC_067,7,nddi_pico,NDDI máximo,0.19359,,0.031
+AGC_067,8,crc_pico,CRC máximo,0.49706,,0.021
+AGC_068,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.376
+AGC_068,2,lon,Longitud,-98.52314,°,-0.246
+AGC_068,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.078
+AGC_068,4,dswi5_doy_pico,Día del pico de DSWI5,275.0,,0.049
+AGC_068,5,nddi_doy_pico,Día del pico de NDDI,145.0,,-0.043
+AGC_068,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.038
+AGC_068,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00566,por día,-0.029
+AGC_068,8,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.027
+AGC_069,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.224
+AGC_069,2,lon,Longitud,-98.24801,°,0.133
+AGC_069,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00251,por día,0.099
+AGC_069,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.038
+AGC_069,5,fapar_doy_pico,Día del pico de FAPAR,276.0,,0.031
+AGC_069,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00212,por día,0.03
+AGC_069,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00103,por día,0.028
+AGC_069,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.024
+AGC_070,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.358
+AGC_070,2,lon,Longitud,-98.3946,°,-0.236
+AGC_070,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.066
+AGC_070,4,msi_auc,Integral de MSI,1.77336,,0.035
+AGC_070,5,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.032
+AGC_070,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00292,por día,-0.032
+AGC_070,7,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),256.0,,0.024
+AGC_070,8,lat,Latitud,19.95415,°,-0.023
+AGC_071,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.406
+AGC_071,2,lon,Longitud,-98.53351,°,-0.242
+AGC_071,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.084
+AGC_071,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00251,por día,0.056
+AGC_071,5,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.052
+AGC_071,6,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.042
+AGC_071,7,tmin_c_m04,Temperatura mínima de abril,9.50297,°C,-0.039
+AGC_071,8,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.025
+AGC_072,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.197
+AGC_072,2,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01647,por día,-0.132
+AGC_072,3,lon,Longitud,-98.23602,°,0.111
+AGC_072,4,mcrc_auc,Integral de MCRC,0.6067,,-0.053
+AGC_072,5,ndwi_pico,NDWI máximo,0.49622,,-0.037
+AGC_072,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00341,por día,-0.034
+AGC_072,7,prec_mm_m04,Lluvia de abril,9.67741,mm,0.034
+AGC_072,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00119,por día,0.029
+AGC_073,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.206
+AGC_073,2,lon,Longitud,-98.27074,°,0.137
+AGC_073,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00064,por día,0.072
+AGC_073,4,pendiente_grados,Pendiente del terreno,0.39929,°,-0.035
+AGC_073,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.034
+AGC_073,6,mcrc_auc,Integral de MCRC,0.46363,,-0.032
+AGC_073,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00131,por día,-0.029
+AGC_073,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00154,por día,0.029
+AGC_074,1,prec_mm_m05,Lluvia de mayo,226.80118,mm,-0.258
+AGC_074,2,lon,Longitud,-98.60978,°,-0.177
+AGC_074,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00024,por día,-0.061
+AGC_074,4,prec_mm_m04,Lluvia de abril,23.79278,mm,-0.049
+AGC_074,5,evi_auc,Integral de EVI,0.71107,,0.044
+AGC_074,6,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01715,por día,-0.04
+AGC_074,7,fapar_auc,Integral de FAPAR,0.79193,,0.038
+AGC_074,8,lai_tasa_senescencia_pl,Velocidad de senescencia LAI (Planet),-0.02767,por día,0.035
+AGC_075,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.375
+AGC_075,2,lon,Longitud,-98.54574,°,-0.225
+AGC_075,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.067
+AGC_075,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.058
+AGC_075,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0025,por día,0.052
+AGC_075,6,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.046
+AGC_075,7,tmin_c_m04,Temperatura mínima de abril,9.50297,°C,-0.036
+AGC_075,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00262,por día,0.032
+AGC_076,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.204
+AGC_076,2,lon,Longitud,-98.26631,°,0.127
+AGC_076,3,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),283.0,,-0.061
+AGC_076,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00272,por día,-0.06
+AGC_076,5,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.0022,por día,-0.056
+AGC_076,6,ndti_doy_pico,Día del pico de NDTI,278.0,,-0.049
+AGC_076,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00134,por día,0.044
+AGC_076,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.038
+AGC_077,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.213
+AGC_077,2,lon,Longitud,-98.25247,°,0.129
+AGC_077,3,ndti_doy_pico,Día del pico de NDTI,278.0,,-0.051
+AGC_077,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00277,por día,-0.051
+AGC_077,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00203,por día,0.042
+AGC_077,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00362,por día,-0.04
+AGC_077,7,AREA_HA,Área de la parcela,6.08,ha,-0.034
+AGC_077,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.033
+AGC_078,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.309
+AGC_078,2,lon,Longitud,-98.41202,°,-0.218
+AGC_078,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.053
+AGC_078,4,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.043
+AGC_078,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.01178,por día,0.039
+AGC_078,6,msi_auc,Integral de MSI,1.81784,,0.036
+AGC_078,7,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01473,por día,-0.034
+AGC_078,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00704,por día,0.023
+AGC_079,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.337
+AGC_079,2,lon,Longitud,-98.38575,°,-0.202
+AGC_079,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.058
+AGC_079,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.0148,por día,-0.042
+AGC_079,5,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.035
+AGC_079,6,nddi_doy_pico,Día del pico de NDDI,151.0,,-0.03
+AGC_079,7,msi_auc,Integral de MSI,1.79223,,0.025
+AGC_079,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00479,por día,-0.024
+AGC_080,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.343
+AGC_080,2,lon,Longitud,-98.42991,°,-0.24
+AGC_080,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.071
+AGC_080,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01703,por día,-0.043
+AGC_080,5,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.033
+AGC_080,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.006,por día,-0.03
+AGC_080,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00047,por día,-0.025
+AGC_080,8,ndvi_auc,Integral de NDVI,0.8632,,0.02
+AGC_081,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.361
+AGC_081,2,lon,Longitud,-98.37143,°,0.122
+AGC_081,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.083
+AGC_081,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01628,por día,-0.067
+AGC_081,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00118,por día,0.025
+AGC_081,6,mcrc_auc,Integral de MCRC,0.61422,,-0.024
+AGC_081,7,tmin_c_m04,Temperatura mínima de abril,11.08938,°C,-0.02
+AGC_081,8,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.02
+AGC_082,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.231
+AGC_082,2,lon,Longitud,-98.26926,°,0.139
+AGC_082,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00251,por día,0.057
+AGC_082,4,prec_mm_m04,Lluvia de abril,11.75078,mm,0.038
+AGC_082,5,mcrc_auc,Integral de MCRC,0.61312,,-0.034
+AGC_082,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00291,por día,-0.027
+AGC_082,7,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00175,por día,-0.026
+AGC_082,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00349,por día,0.025
+AGC_083,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.231
+AGC_083,2,lon,Longitud,-98.29257,°,0.145
+AGC_083,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00153,por día,0.039
+AGC_083,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.035
+AGC_083,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00466,por día,0.034
+AGC_083,6,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.03
+AGC_083,7,tmin_c_m04,Temperatura mínima de abril,11.31288,°C,0.023
+AGC_083,8,fapar_doy_pico,Día del pico de FAPAR,220.0,,-0.022
+AGC_084,1,prec_mm_m05,Lluvia de mayo,102.92899,mm,0.206
+AGC_084,2,lon,Longitud,-98.2873,°,0.118
+AGC_084,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00231,por día,0.108
+AGC_084,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),297.0,,-0.073
+AGC_084,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00025,por día,-0.041
+AGC_084,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00199,por día,-0.036
+AGC_084,7,ndsvi_auc,Integral de NDSVI,0.84717,,0.036
+AGC_084,8,prec_mm_m04,Lluvia de abril,10.78487,mm,0.036
+AGC_085,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.189
+AGC_085,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.179
+AGC_085,3,lon,Longitud,-98.25202,°,0.11
+AGC_085,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00256,por día,0.079
+AGC_085,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_085,6,tmin_c_m04,Temperatura mínima de abril,11.31288,°C,0.035
+AGC_085,7,pendiente_grados,Pendiente del terreno,0.79121,°,-0.032
+AGC_085,8,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00112,por día,-0.032
+AGC_086,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.341
+AGC_086,2,lon,Longitud,-98.53167,°,-0.204
+AGC_086,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.061
+AGC_086,4,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),269.0,,0.053
+AGC_086,5,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.045
+AGC_086,6,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00029,por día,0.042
+AGC_086,7,ndti_doy_pico,Día del pico de NDTI,278.0,,-0.027
+AGC_086,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00284,por día,-0.023
+AGC_087,1,prec_mm_m05,Lluvia de mayo,171.95721,mm,-0.361
+AGC_087,2,lon,Longitud,-98.53886,°,-0.228
+AGC_087,3,prec_mm_m04,Lluvia de abril,16.4313,mm,-0.064
+AGC_087,4,tmax_c_m04,Temperatura máxima de abril,26.09061,°C,-0.054
+AGC_087,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01402,por día,-0.04
+AGC_087,6,tmin_c_m04,Temperatura mínima de abril,9.49567,°C,-0.028
+AGC_087,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00403,por día,-0.026
+AGC_087,8,crc_pico,CRC máximo,0.41601,,-0.022
+AGC_088,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.201
+AGC_088,2,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.0156,por día,-0.135
+AGC_088,3,lon,Longitud,-98.23794,°,0.115
+AGC_088,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_088,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00372,por día,0.031
+AGC_088,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00344,por día,-0.029
+AGC_088,7,ndsvi_tasa_verdeo,Velocidad de verdeo NDSVI,0.00152,por día,-0.028
+AGC_088,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00328,por día,-0.021
+AGC_089,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.346
+AGC_089,2,lon,Longitud,-98.40985,°,-0.24
+AGC_089,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.06
+AGC_089,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01575,por día,-0.033
+AGC_089,5,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.031
+AGC_089,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0003,por día,-0.03
+AGC_089,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00568,por día,-0.024
+AGC_089,8,tmax_c_m04,Temperatura máxima de abril,25.79738,°C,0.019
+AGC_090,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.23
+AGC_090,2,lon,Longitud,-98.28736,°,0.132
+AGC_090,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00221,por día,0.041
+AGC_090,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.038
+AGC_090,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00068,por día,-0.025
+AGC_090,6,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.025
+AGC_090,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00323,por día,-0.023
+AGC_090,8,ndti_doy_pico,Día del pico de NDTI,241.0,,0.02
+AGC_091,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.219
+AGC_091,2,lon,Longitud,-98.23914,°,0.137
+AGC_091,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00253,por día,0.067
+AGC_091,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.044
+AGC_091,5,fapar_doy_pico,Día del pico de FAPAR,255.0,,0.029
+AGC_091,6,AREA_HA,Área de la parcela,0.35,ha,0.028
+AGC_091,7,ndwi_pico,NDWI máximo,0.40196,,-0.023
+AGC_091,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00055,por día,0.021
+AGC_092,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.217
+AGC_092,2,lon,Longitud,-98.24162,°,0.135
+AGC_092,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00078,por día,0.082
+AGC_092,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),297.0,,-0.082
+AGC_092,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.044
+AGC_092,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00161,por día,0.031
+AGC_092,7,pendiente_grados,Pendiente del terreno,4.42963,°,0.031
+AGC_092,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00596,por día,0.028
+AGC_093,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.367
+AGC_093,2,lon,Longitud,-98.54626,°,-0.224
+AGC_093,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.072
+AGC_093,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.058
+AGC_093,5,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00117,por día,-0.041
+AGC_093,6,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.038
+AGC_093,7,tmin_c_m04,Temperatura mínima de abril,9.50297,°C,-0.028
+AGC_093,8,ndti_doy_pico,Día del pico de NDTI,273.0,,-0.027
+AGC_094,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.21
+AGC_094,2,lon,Longitud,-98.2051,°,0.128
+AGC_094,3,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),278.0,,-0.059
+AGC_094,4,pendiente_grados,Pendiente del terreno,1.14067,°,-0.049
+AGC_094,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00141,por día,0.046
+AGC_094,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00365,por día,-0.044
+AGC_094,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00295,por día,-0.039
+AGC_094,8,prec_mm_m04,Lluvia de abril,9.67741,mm,0.038
+AGC_095,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.225
+AGC_095,2,lon,Longitud,-98.26137,°,0.149
+AGC_095,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00235,por día,0.056
+AGC_095,4,fapar_doy_pico,Día del pico de FAPAR,235.0,,-0.044
+AGC_095,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.038
+AGC_095,6,tmin_c_m04,Temperatura mínima de abril,11.31288,°C,0.035
+AGC_095,7,mcrc_doy_pico,Día del pico de MCRC,149.0,,-0.032
+AGC_095,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00043,por día,-0.03
+AGC_096,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.218
+AGC_096,2,lon,Longitud,-98.27009,°,0.145
+AGC_096,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00221,por día,0.076
+AGC_096,4,pendiente_grados,Pendiente del terreno,0.92975,°,-0.032
+AGC_096,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.031
+AGC_096,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0014,por día,0.03
+AGC_096,7,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.027
+AGC_096,8,fapar_doy_pico,Día del pico de FAPAR,242.0,,-0.024
+AGC_097,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.22
+AGC_097,2,lon,Longitud,-98.21734,°,0.142
+AGC_097,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00257,por día,0.132
+AGC_097,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),266.0,,-0.077
+AGC_097,5,nddi_doy_pico,Día del pico de NDDI,143.0,,-0.068
+AGC_097,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00259,por día,0.04
+AGC_097,7,prec_mm_m04,Lluvia de abril,9.67741,mm,0.035
+AGC_097,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.03
+AGC_098,1,prec_mm_m05,Lluvia de mayo,196.23643,mm,-0.327
+AGC_098,2,lon,Longitud,-98.57887,°,-0.228
+AGC_098,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00256,por día,0.094
+AGC_098,4,prec_mm_m04,Lluvia de abril,23.04369,mm,-0.06
+AGC_098,5,tmax_c_m04,Temperatura máxima de abril,26.08275,°C,-0.057
+AGC_098,6,msi_tasa_verdeo,Velocidad de verdeo MSI,8e-05,por día,0.049
+AGC_098,7,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),261.0,,0.048
+AGC_098,8,nddi_doy_pico,Día del pico de NDDI,159.0,,-0.038
+AGC_099,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.358
+AGC_099,2,lon,Longitud,-98.52884,°,-0.241
+AGC_099,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.087
+AGC_099,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.073
+AGC_099,5,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.028
+AGC_099,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00119,por día,0.027
+AGC_099,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00092,por día,-0.024
+AGC_099,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00275,por día,-0.023
+AGC_100,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.228
+AGC_100,2,lon,Longitud,-98.2911,°,0.125
+AGC_100,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00147,por día,0.039
+AGC_100,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00043,por día,-0.031
+AGC_100,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.03
+AGC_100,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00406,por día,0.028
+AGC_100,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00325,por día,-0.027
+AGC_100,8,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.023
+AGC_101,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.218
+AGC_101,2,lon,Longitud,-98.2764,°,0.136
+AGC_101,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00229,por día,0.075
+AGC_101,4,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00343,por día,-0.042
+AGC_101,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.039
+AGC_101,6,fapar_doy_pico,Día del pico de FAPAR,241.0,,-0.038
+AGC_101,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00323,por día,0.03
+AGC_101,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0036,por día,-0.028
+AGC_102,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.237
+AGC_102,2,lon,Longitud,-98.28003,°,0.153
+AGC_102,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00237,por día,0.069
+AGC_102,4,fapar_doy_pico,Día del pico de FAPAR,241.0,,-0.043
+AGC_102,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.037
+AGC_102,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00578,por día,0.032
+AGC_102,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.01742,por día,0.027
+AGC_102,8,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.025
+AGC_103,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.329
+AGC_103,2,lon,Longitud,-98.5838,°,-0.208
+AGC_103,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.063
+AGC_103,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01771,por día,-0.044
+AGC_103,5,ndvi_auc_2023,NDVI acumulado 2023,2.14773,,0.041
+AGC_103,6,evi_auc,Integral de EVI,0.70118,,0.039
+AGC_103,7,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.037
+AGC_103,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00527,por día,-0.026
+AGC_104,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.219
+AGC_104,2,lon,Longitud,-98.25089,°,0.134
+AGC_104,3,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00032,por día,-0.048
+AGC_104,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00125,por día,0.034
+AGC_104,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.032
+AGC_104,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00271,por día,-0.029
+AGC_104,7,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00152,por día,-0.029
+AGC_104,8,pendiente_grados,Pendiente del terreno,0.75817,°,-0.028
+AGC_105,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.23
+AGC_105,2,lon,Longitud,-98.25724,°,0.13
+AGC_105,3,pendiente_grados,Pendiente del terreno,0.71853,°,-0.044
+AGC_105,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.033
+AGC_105,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00276,por día,-0.032
+AGC_105,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00042,por día,-0.032
+AGC_105,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00557,por día,0.03
+AGC_105,8,fapar_doy_pico,Día del pico de FAPAR,273.0,,0.026
+AGC_106,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.216
+AGC_106,2,lon,Longitud,-98.25972,°,0.127
+AGC_106,3,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.0029,por día,-0.066
+AGC_106,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0004,por día,-0.041
+AGC_106,5,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.0015,por día,-0.037
+AGC_106,6,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00141,por día,-0.03
+AGC_106,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00538,por día,-0.028
+AGC_106,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.027
+AGC_107,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00018,por día,-0.205
+AGC_107,2,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.2
+AGC_107,3,lon,Longitud,-98.26565,°,0.112
+AGC_107,4,prec_mm_m04,Lluvia de abril,11.75078,mm,0.034
+AGC_107,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0028,por día,0.031
+AGC_107,6,pendiente_grados,Pendiente del terreno,0.775,°,-0.027
+AGC_107,7,evi_auc,Integral de EVI,0.78298,,0.024
+AGC_107,8,ndvi_auc_2023,NDVI acumulado 2023,2.6724,,0.022
+AGC_108,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.253
+AGC_108,2,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0017,por día,0.156
+AGC_108,3,lon,Longitud,-98.21737,°,0.154
+AGC_108,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00135,por día,0.116
+AGC_108,5,pendiente_grados,Pendiente del terreno,7.37883,°,0.047
+AGC_108,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.046
+AGC_108,7,fapar_doy_pico,Día del pico de FAPAR,277.0,,0.045
+AGC_108,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.03
+AGC_109,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.237
+AGC_109,2,lon,Longitud,-98.2204,°,0.151
+AGC_109,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00206,por día,0.122
+AGC_109,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00096,por día,0.083
+AGC_109,5,nddi_doy_pico,Día del pico de NDDI,145.0,,-0.054
+AGC_109,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.039
+AGC_109,7,fapar_doy_pico,Día del pico de FAPAR,274.0,,0.032
+AGC_109,8,mcrc_doy_pico,Día del pico de MCRC,146.0,,-0.029
+AGC_110,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.22
+AGC_110,2,lon,Longitud,-98.25895,°,0.126
+AGC_110,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00231,por día,0.067
+AGC_110,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.033
+AGC_110,5,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00105,por día,-0.033
+AGC_110,6,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00174,por día,-0.032
+AGC_110,7,pendiente_grados,Pendiente del terreno,0.56031,°,-0.027
+AGC_110,8,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.024
+AGC_111,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.23
+AGC_111,2,lon,Longitud,-98.2464,°,0.133
+AGC_111,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0028,por día,-0.043
+AGC_111,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_111,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00184,por día,0.039
+AGC_111,6,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.028
+AGC_111,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00483,por día,0.022
+AGC_111,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00355,por día,-0.02
+AGC_112,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.376
+AGC_112,2,lon,Longitud,-98.5271,°,-0.243
+AGC_112,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.07
+AGC_112,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.048
+AGC_112,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00047,por día,-0.036
+AGC_112,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00354,por día,-0.034
+AGC_112,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00522,por día,-0.031
+AGC_112,8,tmax_c_m05,Temperatura máxima de mayo,25.82256,°C,-0.027
+AGC_113,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.325
+AGC_113,2,lon,Longitud,-98.38951,°,-0.184
+AGC_113,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00023,por día,-0.075
+AGC_113,4,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.063
+AGC_113,5,msi_auc,Integral de MSI,1.81032,,0.041
+AGC_113,6,tmin_c_m04,Temperatura mínima de abril,11.08938,°C,-0.024
+AGC_113,7,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.024
+AGC_113,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00635,por día,-0.022
+AGC_114,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.345
+AGC_114,2,lon,Longitud,-98.57688,°,-0.238
+AGC_114,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.064
+AGC_114,4,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.038
+AGC_114,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00021,por día,-0.034
+AGC_114,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00594,por día,-0.032
+AGC_114,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00024,por día,0.029
+AGC_114,8,nddi_pico,NDDI máximo,0.08589,,0.025
+AGC_115,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.202
+AGC_115,2,lon,Longitud,-98.27104,°,0.131
+AGC_115,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00213,por día,0.067
+AGC_115,4,pendiente_grados,Pendiente del terreno,0.47439,°,-0.051
+AGC_115,5,mcrc_auc,Integral de MCRC,0.5415,,-0.037
+AGC_115,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.034
+AGC_115,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00157,por día,0.029
+AGC_115,8,ndvi_tasa_verdeo_pl,Velocidad de verdeo NDVI (Planet),0.00263,por día,-0.025
+AGC_116,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.245
+AGC_116,2,lon,Longitud,-98.26215,°,0.127
+AGC_116,3,pendiente_grados,Pendiente del terreno,0.76057,°,-0.047
+AGC_116,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0002,por día,-0.033
+AGC_116,5,prec_mm_m04,Lluvia de abril,11.75078,mm,0.033
+AGC_116,6,crc_tasa_senescencia,Velocidad de senescencia CRC,-0.00907,por día,-0.032
+AGC_116,7,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00256,por día,-0.028
+AGC_116,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00355,por día,-0.028
+AGC_117,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.337
+AGC_117,2,lon,Longitud,-98.52119,°,-0.238
+AGC_117,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0023,por día,0.09
+AGC_117,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.07
+AGC_117,5,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.061
+AGC_117,6,nddi_doy_pico,Día del pico de NDDI,144.0,,-0.05
+AGC_117,7,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),257.0,,0.028
+AGC_117,8,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0008,por día,-0.024
+AGC_118,1,prec_mm_m05,Lluvia de mayo,129.37352,mm,-0.416
+AGC_118,2,lon,Longitud,-98.42315,°,-0.241
+AGC_118,3,prec_mm_m04,Lluvia de abril,11.30961,mm,0.041
+AGC_118,4,prec_mm_m06,Lluvia de junio,366.06265,mm,-0.04
+AGC_118,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00597,por día,-0.028
+AGC_118,6,crc_pico,CRC máximo,0.4641,,0.025
+AGC_118,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00922,por día,0.024
+AGC_118,8,tmin_c_m04,Temperatura mínima de abril,10.27419,°C,-0.024
+AGC_119,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.226
+AGC_119,2,lon,Longitud,-98.2768,°,0.143
+AGC_119,3,prec_mm_m04,Lluvia de abril,11.75043,mm,0.036
+AGC_119,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00036,por día,-0.035
+AGC_119,5,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00129,por día,-0.033
+AGC_119,6,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.03
+AGC_119,7,tmin_c_m04,Temperatura mínima de abril,11.67517,°C,0.027
+AGC_119,8,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00161,por día,0.021
+AGC_120,1,prec_mm_m05,Lluvia de mayo,171.95721,mm,-0.297
+AGC_120,2,lon,Longitud,-98.5367,°,-0.186
+AGC_120,3,prec_mm_m04,Lluvia de abril,16.4313,mm,-0.064
+AGC_120,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01574,por día,-0.046
+AGC_120,5,tmax_c_m04,Temperatura máxima de abril,26.09061,°C,-0.044
+AGC_120,6,evi_auc,Integral de EVI,0.79186,,0.036
+AGC_120,7,ndsvi_pico,NDSVI máximo,0.55767,,0.028
+AGC_120,8,msi_auc,Integral de MSI,1.74288,,0.025
+AGC_121,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.309
+AGC_121,2,lon,Longitud,-98.4136,°,-0.237
+AGC_121,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.059
+AGC_121,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01534,por día,-0.041
+AGC_121,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.01197,por día,0.032
+AGC_121,6,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.031
+AGC_121,7,msi_auc,Integral de MSI,1.85865,,0.028
+AGC_121,8,nddi_pico,NDDI máximo,0.08665,,0.022
+AGC_122,1,prec_mm_m05,Lluvia de mayo,226.80118,mm,-0.352
+AGC_122,2,lon,Longitud,-98.60063,°,-0.215
+AGC_122,3,prec_mm_m04,Lluvia de abril,23.79278,mm,-0.077
+AGC_122,4,tmax_c_m04,Temperatura máxima de abril,26.10379,°C,-0.055
+AGC_122,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01398,por día,-0.042
+AGC_122,6,msi_auc,Integral de MSI,1.83812,,0.027
+AGC_122,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00043,por día,-0.026
+AGC_122,8,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00078,por día,-0.025
+AGC_123,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.373
+AGC_123,2,lon,Longitud,-98.59896,°,-0.253
+AGC_123,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.073
+AGC_123,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00211,por día,0.061
+AGC_123,5,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.04
+AGC_123,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00565,por día,-0.027
+AGC_123,7,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.026
+AGC_123,8,fapar_doy_pico,Día del pico de FAPAR,227.0,,-0.025
+AGC_124,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.243
+AGC_124,2,lon,Longitud,-98.22623,°,0.141
+AGC_124,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00222,por día,0.09
+AGC_124,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.043
+AGC_124,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00106,por día,0.037
+AGC_124,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0061,por día,0.027
+AGC_124,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00337,por día,-0.024
+AGC_124,8,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.022
+AGC_125,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.221
+AGC_125,2,lon,Longitud,-98.25945,°,0.114
+AGC_125,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01444,por día,-0.095
+AGC_125,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00137,por día,0.033
+AGC_125,5,prec_mm_m04,Lluvia de abril,11.75078,mm,0.029
+AGC_125,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00484,por día,0.025
+AGC_125,7,ndsvi_tasa_verdeo,Velocidad de verdeo NDSVI,0.00148,por día,-0.021
+AGC_125,8,tmax_c_m04,Temperatura máxima de abril,25.86499,°C,0.021
+AGC_126,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.223
+AGC_126,2,lon,Longitud,-98.24371,°,0.132
+AGC_126,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.043
+AGC_126,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00366,por día,0.036
+AGC_126,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0033,por día,-0.034
+AGC_126,6,tmin_c_m04,Temperatura mínima de abril,11.56274,°C,0.028
+AGC_126,7,ndsvi_tasa_verdeo,Velocidad de verdeo NDSVI,0.00153,por día,-0.027
+AGC_126,8,ndwi_pico,NDWI máximo,0.40369,,-0.023
+AGC_127,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.186
+AGC_127,2,lon,Longitud,-98.25618,°,0.142
+AGC_127,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00169,por día,0.101
+AGC_127,4,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00089,por día,-0.031
+AGC_127,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00056,por día,0.031
+AGC_127,6,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.029
+AGC_127,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.029
+AGC_127,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00064,por día,-0.027
+AGC_128,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.22
+AGC_128,2,lon,Longitud,-98.26919,°,0.119
+AGC_128,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01489,por día,-0.114
+AGC_128,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00227,por día,0.06
+AGC_128,5,prec_mm_m04,Lluvia de abril,11.75078,mm,0.03
+AGC_128,6,evi_auc,Integral de EVI,0.69889,,0.026
+AGC_128,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00067,por día,-0.023
+AGC_128,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00311,por día,-0.023
+AGC_129,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.336
+AGC_129,2,lon,Longitud,-98.37404,°,0.109
+AGC_129,3,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.074
+AGC_129,4,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01602,por día,-0.07
+AGC_129,5,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.032
+AGC_129,6,msi_auc,Integral de MSI,1.71099,,0.029
+AGC_129,7,ndvi_auc,Integral de NDVI,0.87953,,0.02
+AGC_129,8,tmin_c_m04,Temperatura mínima de abril,11.08938,°C,-0.018
+AGC_130,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.234
+AGC_130,2,lon,Longitud,-98.27346,°,0.147
+AGC_130,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00282,por día,0.04
+AGC_130,4,prec_mm_m04,Lluvia de abril,11.75043,mm,0.04
+AGC_130,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00103,por día,0.033
+AGC_130,6,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00171,por día,-0.027
+AGC_130,7,tmin_c_m04,Temperatura mínima de abril,11.67517,°C,0.026
+AGC_130,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00302,por día,-0.024
+AGC_131,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.235
+AGC_131,2,lon,Longitud,-98.26371,°,0.139
+AGC_131,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00225,por día,0.042
+AGC_131,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.038
+AGC_131,5,fapar_doy_pico,Día del pico de FAPAR,233.0,,-0.03
+AGC_131,6,tmax_c_m04,Temperatura máxima de abril,25.88852,°C,0.029
+AGC_131,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00448,por día,0.028
+AGC_131,8,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01203,por día,0.021
+AGC_132,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.212
+AGC_132,2,lon,Longitud,-98.2332,°,0.124
+AGC_132,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01395,por día,-0.047
+AGC_132,4,ndti_doy_pico,Día del pico de NDTI,277.0,,-0.045
+AGC_132,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.034
+AGC_132,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00351,por día,-0.034
+AGC_132,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00304,por día,0.029
+AGC_132,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00366,por día,-0.024
+AGC_133,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.211
+AGC_133,2,lon,Longitud,-98.24955,°,0.126
+AGC_133,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01442,por día,-0.109
+AGC_133,4,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.046
+AGC_133,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0056,por día,0.036
+AGC_133,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00316,por día,-0.034
+AGC_133,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.01938,por día,0.033
+AGC_133,8,prec_mm_m04,Lluvia de abril,9.67741,mm,0.032
+AGC_134,1,prec_mm_m05,Lluvia de mayo,91.46478,mm,0.214
+AGC_134,2,lon,Longitud,-98.35445,°,0.111
+AGC_134,3,prec_mm_m04,Lluvia de abril,8.28646,mm,0.038
+AGC_134,4,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00342,por día,-0.034
+AGC_134,5,ndsvi_auc,Integral de NDSVI,0.81485,,0.034
+AGC_134,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0016,por día,0.03
+AGC_134,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0036,por día,-0.027
+AGC_134,8,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00156,por día,-0.026
+AGC_135,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.233
+AGC_135,2,lon,Longitud,-98.24607,°,0.133
+AGC_135,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.042
+AGC_135,4,mcrc_auc,Integral de MCRC,0.60709,,-0.037
+AGC_135,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0028,por día,-0.036
+AGC_135,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00136,por día,0.034
+AGC_135,7,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.026
+AGC_135,8,pendiente_grados,Pendiente del terreno,6.42312,°,0.025
+AGC_136,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.208
+AGC_136,2,lon,Longitud,-98.25407,°,0.121
+AGC_136,3,ndti_doy_pico,Día del pico de NDTI,280.0,,-0.054
+AGC_136,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00272,por día,-0.042
+AGC_136,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00162,por día,0.041
+AGC_136,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.034
+AGC_136,7,pendiente_grados,Pendiente del terreno,0.29371,°,-0.025
+AGC_136,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00439,por día,0.025
+AGC_137,1,prec_mm_m05,Lluvia de mayo,102.92899,mm,0.235
+AGC_137,2,lon,Longitud,-98.28329,°,0.122
+AGC_137,3,prec_mm_m04,Lluvia de abril,10.78487,mm,0.039
+AGC_137,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00146,por día,0.033
+AGC_137,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00409,por día,0.031
+AGC_137,6,ndsvi_auc,Integral de NDSVI,0.87075,,0.03
+AGC_137,7,ndvi_auc_2023,NDVI acumulado 2023,2.52033,,0.021
+AGC_137,8,crc_tasa_senescencia,Velocidad de senescencia CRC,-0.00138,por día,-0.02
+AGC_138,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.372
+AGC_138,2,lon,Longitud,-98.52562,°,-0.227
+AGC_138,3,ndvi_auc_2023,NDVI acumulado 2023,2.0957,,0.083
+AGC_138,4,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.061
+AGC_138,5,crc_pico,CRC máximo,0.45579,,0.043
+AGC_138,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.033
+AGC_138,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.0031,por día,0.025
+AGC_138,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00557,por día,-0.02
+AGC_139,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.204
+AGC_139,2,lon,Longitud,-98.27165,°,0.126
+AGC_139,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00245,por día,0.051
+AGC_139,4,mcrc_auc,Integral de MCRC,0.59273,,-0.049
+AGC_139,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_139,6,pendiente_grados,Pendiente del terreno,0.34303,°,-0.035
+AGC_139,7,crc_auc,Integral de CRC,0.63562,,-0.028
+AGC_139,8,dswi2_tasa_senescencia,Velocidad de senescencia DSWI2,0.0,por día,-0.028
+AGC_140,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.288
+AGC_140,2,lon,Longitud,-98.42768,°,-0.185
+AGC_140,3,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.057
+AGC_140,4,ndsvi_pico,NDSVI máximo,0.54029,,0.046
+AGC_140,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.0163,por día,-0.039
+AGC_140,6,msi_auc,Integral de MSI,1.76282,,0.035
+AGC_140,7,crc_pico,CRC máximo,0.46338,,0.031
+AGC_140,8,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.027
+AGC_141,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.307
+AGC_141,2,lon,Longitud,-98.55019,°,-0.222
+AGC_141,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00019,por día,-0.092
+AGC_141,4,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.069
+AGC_141,5,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.064
+AGC_141,6,nddi_doy_pico,Día del pico de NDDI,214.0,,-0.036
+AGC_141,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00468,por día,-0.035
+AGC_141,8,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),261.0,,0.034
+AGC_142,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.236
+AGC_142,2,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00156,por día,0.137
+AGC_142,3,lon,Longitud,-98.2487,°,0.137
+AGC_142,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00249,por día,0.089
+AGC_142,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.045
+AGC_142,6,AREA_HA,Área de la parcela,1.29,ha,0.04
+AGC_142,7,pendiente_grados,Pendiente del terreno,7.95099,°,0.04
+AGC_142,8,fapar_doy_pico,Día del pico de FAPAR,250.0,,0.035
+AGC_143,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.217
+AGC_143,2,lon,Longitud,-98.28553,°,0.129
+AGC_143,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00264,por día,0.043
+AGC_143,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.04
+AGC_143,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00275,por día,-0.037
+AGC_143,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00375,por día,-0.036
+AGC_143,7,ndti_doy_pico,Día del pico de NDTI,242.0,,0.027
+AGC_143,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00065,por día,-0.024
+AGC_144,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.321
+AGC_144,2,lon,Longitud,-98.59691,°,-0.226
+AGC_144,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.06
+AGC_144,4,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.038
+AGC_144,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.0163,por día,-0.03
+AGC_144,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00446,por día,-0.029
+AGC_144,7,mun_Chignahuapan,Municipio Chignahuapan,0.0,sí/no,-0.025
+AGC_144,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00068,por día,-0.024
+AGC_145,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.325
+AGC_145,2,lon,Longitud,-98.59465,°,-0.207
+AGC_145,3,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.067
+AGC_145,4,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.06
+AGC_145,5,nddi_doy_pico,Día del pico de NDDI,144.0,,-0.041
+AGC_145,6,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01596,por día,-0.04
+AGC_145,7,ndsvi_pico,NDSVI máximo,0.51946,,0.031
+AGC_145,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00531,por día,-0.029
+AGC_146,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.232
+AGC_146,2,lon,Longitud,-98.26802,°,0.125
+AGC_146,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00275,por día,0.043
+AGC_146,4,ndsvi_auc,Integral de NDSVI,0.88981,,0.038
+AGC_146,5,prec_mm_m04,Lluvia de abril,11.75078,mm,0.034
+AGC_146,6,ndvi_auc_2023,NDVI acumulado 2023,2.32117,,0.028
+AGC_146,7,ndvi_auc,Integral de NDVI,0.92226,,0.021
+AGC_146,8,pendiente_grados,Pendiente del terreno,0.63966,°,-0.02
+AGC_147,1,prec_mm_m05,Lluvia de mayo,232.71565,mm,-0.333
+AGC_147,2,lon,Longitud,-98.60315,°,-0.204
+AGC_147,3,prec_mm_m04,Lluvia de abril,18.19474,mm,-0.06
+AGC_147,4,evi_auc,Integral de EVI,0.70685,,0.048
+AGC_147,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01719,por día,-0.044
+AGC_147,6,tmax_c_m04,Temperatura máxima de abril,26.22578,°C,-0.044
+AGC_147,7,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.039
+AGC_147,8,ndsvi_pico,NDSVI máximo,0.52339,,0.027
+AGC_148,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.255
+AGC_148,2,lon,Longitud,-98.40913,°,-0.218
+AGC_148,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,6e-05,por día,-0.07
+AGC_148,4,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.045
+AGC_148,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01588,por día,-0.029
+AGC_148,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00019,por día,-0.027
+AGC_148,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00618,por día,-0.025
+AGC_148,8,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.024
+AGC_149,1,prec_mm_m05,Lluvia de mayo,124.3766,mm,0.227
+AGC_149,2,lon,Longitud,-98.27634,°,0.14
+AGC_149,3,prec_mm_m04,Lluvia de abril,11.75043,mm,0.041
+AGC_149,4,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00286,por día,-0.041
+AGC_149,5,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00184,por día,-0.027
+AGC_149,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.001,por día,0.026
+AGC_149,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00298,por día,0.023
+AGC_149,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00416,por día,-0.023
+AGC_150,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.241
+AGC_150,2,lon,Longitud,-98.24971,°,0.132
+AGC_150,3,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.0019,por día,-0.051
+AGC_150,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00197,por día,0.038
+AGC_150,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.038
+AGC_150,6,pendiente_grados,Pendiente del terreno,0.80778,°,-0.038
+AGC_150,7,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00281,por día,-0.031
+AGC_150,8,ndti_tasa_senescencia,Velocidad de senescencia NDTI,-0.00285,por día,-0.031
+AGC_151,1,prec_mm_m05,Lluvia de mayo,102.92899,mm,0.219
+AGC_151,2,lon,Longitud,-98.28243,°,0.113
+AGC_151,3,ndsvi_auc,Integral de NDSVI,0.94125,,0.046
+AGC_151,4,prec_mm_m04,Lluvia de abril,10.78487,mm,0.034
+AGC_151,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00165,por día,0.029
+AGC_151,6,ndvi_auc_2023,NDVI acumulado 2023,2.60853,,0.023
+AGC_151,7,ndvi_auc,Integral de NDVI,1.01819,,0.021
+AGC_151,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00344,por día,0.019
+AGC_152,1,prec_mm_m05,Lluvia de mayo,102.92899,mm,0.217
+AGC_152,2,lon,Longitud,-98.27703,°,0.13
+AGC_152,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00223,por día,0.056
+AGC_152,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00201,por día,0.038
+AGC_152,5,prec_mm_m04,Lluvia de abril,10.78487,mm,0.036
+AGC_152,6,ndsvi_auc,Integral de NDSVI,0.80367,,0.028
+AGC_152,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00762,por día,0.028
+AGC_152,8,ndvi_auc,Integral de NDVI,0.98482,,0.022
+AGC_153,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.193
+AGC_153,2,lon,Longitud,-98.26092,°,0.119
+AGC_153,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00129,por día,0.065
+AGC_153,4,pendiente_grados,Pendiente del terreno,0.31733,°,-0.062
+AGC_153,5,ndti_doy_pico,Día del pico de NDTI,282.0,,-0.046
+AGC_153,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00475,por día,-0.04
+AGC_153,7,mcrc_auc,Integral de MCRC,0.50303,,-0.04
+AGC_153,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_154,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.198
+AGC_154,2,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01514,por día,-0.127
+AGC_154,3,lon,Longitud,-98.26308,°,0.118
+AGC_154,4,nddi_doy_pico,Día del pico de NDDI,149.0,,-0.057
+AGC_154,5,ndvi_auc_2023,NDVI acumulado 2023,2.5405,,0.027
+AGC_154,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.026
+AGC_154,7,mcrc_doy_pico,Día del pico de MCRC,150.0,,-0.021
+AGC_154,8,fapar_doy_pico,Día del pico de FAPAR,235.0,,-0.019
+AGC_155,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00018,por día,-0.224
+AGC_155,2,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.214
+AGC_155,3,lon,Longitud,-98.22375,°,0.127
+AGC_155,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00236,por día,0.067
+AGC_155,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.045
+AGC_155,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00345,por día,-0.044
+AGC_155,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00158,por día,-0.035
+AGC_155,8,pendiente_grados,Pendiente del terreno,6.02075,°,0.025
+AGC_156,1,prec_mm_m05,Lluvia de mayo,135.34532,mm,-0.301
+AGC_156,2,lon,Longitud,-98.43357,°,-0.18
+AGC_156,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00013,por día,-0.082
+AGC_156,4,prec_mm_m04,Lluvia de abril,12.32663,mm,-0.063
+AGC_156,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01509,por día,-0.044
+AGC_156,6,nddi_doy_pico,Día del pico de NDDI,163.0,,-0.043
+AGC_156,7,msi_auc,Integral de MSI,1.84622,,0.037
+AGC_156,8,prec_mm_m06,Lluvia de junio,361.12079,mm,-0.034
+AGC_157,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.26
+AGC_157,2,lon,Longitud,-98.54941,°,-0.195
+AGC_157,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00021,por día,-0.087
+AGC_157,4,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.056
+AGC_157,5,msi_tasa_verdeo,Velocidad de verdeo MSI,0.0,por día,0.043
+AGC_157,6,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),260.0,,0.041
+AGC_157,7,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.037
+AGC_157,8,nddi_doy_pico,Día del pico de NDDI,214.0,,-0.032
+AGC_158,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.218
+AGC_158,2,lon,Longitud,-98.27808,°,0.134
+AGC_158,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00226,por día,0.064
+AGC_158,4,pendiente_grados,Pendiente del terreno,1.06791,°,-0.058
+AGC_158,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00619,por día,0.04
+AGC_158,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.039
+AGC_158,7,tmin_c_m04,Temperatura mínima de abril,11.31288,°C,0.03
+AGC_158,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00351,por día,-0.027
+AGC_159,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.207
+AGC_159,2,lon,Longitud,-98.24329,°,0.121
+AGC_159,3,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),292.0,,-0.075
+AGC_159,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00263,por día,-0.05
+AGC_159,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00175,por día,0.037
+AGC_159,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.036
+AGC_159,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00204,por día,0.035
+AGC_159,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00565,por día,0.027
+AGC_160,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.221
+AGC_160,2,lon,Longitud,-98.22256,°,0.138
+AGC_160,3,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00419,por día,0.049
+AGC_160,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00287,por día,-0.043
+AGC_160,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.04
+AGC_160,6,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),283.0,,-0.036
+AGC_160,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00224,por día,-0.025
+AGC_160,8,pendiente_grados,Pendiente del terreno,3.10146,°,0.024
+AGC_161,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.226
+AGC_161,2,lon,Longitud,-98.2202,°,0.137
+AGC_161,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00248,por día,0.06
+AGC_161,4,prec_mm_m04,Lluvia de abril,9.67741,mm,0.04
+AGC_161,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00275,por día,-0.038
+AGC_161,6,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00218,por día,0.034
+AGC_161,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00692,por día,0.031
+AGC_161,8,fapar_doy_pico,Día del pico de FAPAR,277.0,,0.027
+AGC_162,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.219
+AGC_162,2,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.185
+AGC_162,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00154,por día,0.123
+AGC_162,4,lon,Longitud,-98.2327,°,0.119
+AGC_162,5,crc_tasa_verdeo,Velocidad de verdeo CRC,7e-05,por día,-0.108
+AGC_162,6,dswi2_tasa_senescencia,Velocidad de senescencia DSWI2,-0.00033,por día,-0.031
+AGC_162,7,prec_mm_m04,Lluvia de abril,9.67741,mm,0.03
+AGC_162,8,ndti_doy_pico,Día del pico de NDTI,280.0,,-0.028
+AGC_163,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.306
+AGC_163,2,lon,Longitud,-98.54944,°,-0.209
+AGC_163,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00015,por día,-0.088
+AGC_163,4,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.064
+AGC_163,5,msavi_doy_pico_pl,Día del pico de MSAVI (Planet),261.0,,0.061
+AGC_163,6,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.047
+AGC_163,7,msi_tasa_verdeo,Velocidad de verdeo MSI,7e-05,por día,0.042
+AGC_163,8,ndti_doy_pico,Día del pico de NDTI,280.0,,-0.036
+AGC_164,1,prec_mm_m05,Lluvia de mayo,142.38895,mm,-0.352
+AGC_164,2,lon,Longitud,-98.52222,°,-0.23
+AGC_164,3,tmax_c_m04,Temperatura máxima de abril,26.14719,°C,-0.053
+AGC_164,4,prec_mm_m04,Lluvia de abril,11.36275,mm,0.029
+AGC_164,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00264,por día,-0.023
+AGC_164,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00053,por día,-0.02
+AGC_164,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00685,por día,0.019
+AGC_164,8,tmax_c_m05,Temperatura máxima de mayo,25.99648,°C,-0.019
+AGC_165,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.223
+AGC_165,2,lon,Longitud,-98.23726,°,0.125
+AGC_165,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01389,por día,-0.112
+AGC_165,4,mcrc_doy_pico,Día del pico de MCRC,217.0,,-0.05
+AGC_165,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00298,por día,-0.033
+AGC_165,6,prec_mm_m04,Lluvia de abril,9.67741,mm,0.03
+AGC_165,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00282,por día,0.03
+AGC_165,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00487,por día,0.025
+AGC_166,1,prec_mm_m05,Lluvia de mayo,126.80244,mm,-0.348
+AGC_166,2,lon,Longitud,-98.39677,°,-0.253
+AGC_166,3,prec_mm_m06,Lluvia de junio,314.07169,mm,-0.034
+AGC_166,4,prec_mm_m04,Lluvia de abril,11.17277,mm,0.032
+AGC_166,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00389,por día,-0.032
+AGC_166,6,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00042,por día,-0.03
+AGC_166,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00349,por día,-0.027
+AGC_166,8,prec_anomalia,Anomalía de lluvia del ciclo,441.51218,mm,-0.019
+AGC_167,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.232
+AGC_167,2,lon,Longitud,-98.23992,°,0.147
+AGC_167,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.035
+AGC_167,4,nddi_doy_pico,Día del pico de NDDI,142.0,,-0.032
+AGC_167,5,tmax_c_m04,Temperatura máxima de abril,25.78634,°C,0.029
+AGC_167,6,pendiente_grados,Pendiente del terreno,3.76408,°,0.024
+AGC_167,7,AREA_HA,Área de la parcela,2.46,ha,0.023
+AGC_167,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00491,por día,0.022
+AGC_168,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.222
+AGC_168,2,lon,Longitud,-98.2655,°,0.141
+AGC_168,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00096,por día,0.083
+AGC_168,4,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.05
+AGC_168,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00385,por día,0.048
+AGC_168,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00272,por día,-0.041
+AGC_168,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_168,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00129,por día,0.032
+AGC_169,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.328
+AGC_169,2,lon,Longitud,-98.52887,°,-0.221
+AGC_169,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00019,por día,-0.083
+AGC_169,4,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.063
+AGC_169,5,ndti_doy_pico,Día del pico de NDTI,273.0,,-0.039
+AGC_169,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00603,por día,-0.028
+AGC_169,7,nddi_doy_pico,Día del pico de NDDI,213.0,,-0.028
+AGC_169,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00312,por día,-0.026
+AGC_170,1,prec_mm_m05,Lluvia de mayo,142.38895,mm,-0.334
+AGC_170,2,lon,Longitud,-98.52544,°,-0.231
+AGC_170,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00247,por día,0.098
+AGC_170,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00015,por día,-0.072
+AGC_170,5,nddi_pico,NDDI máximo,0.1385,,0.038
+AGC_170,6,tmax_c_m04,Temperatura máxima de abril,26.14719,°C,-0.037
+AGC_170,7,nddi_doy_pico,Día del pico de NDDI,212.0,,-0.037
+AGC_170,8,prec_mm_m04,Lluvia de abril,11.36275,mm,0.036
+AGC_171,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.22
+AGC_171,2,lon,Longitud,-98.27101,°,0.14
+AGC_171,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.085
+AGC_171,4,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00119,por día,0.056
+AGC_171,5,prec_mm_m04,Lluvia de abril,11.67972,mm,0.045
+AGC_171,6,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.032
+AGC_171,7,dswi2_doy_pico,Día del pico de DSWI2,91.0,,0.03
+AGC_171,8,mun_Chignahuapan,Municipio Chignahuapan,1.0,sí/no,0.027
+AGC_172,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.237
+AGC_172,2,lon,Longitud,-98.23232,°,0.151
+AGC_172,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00235,por día,0.129
+AGC_172,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00557,por día,0.042
+AGC_172,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_172,6,msi_doy_pico,Día del pico de MSI,100.0,,-0.029
+AGC_172,7,fapar_doy_pico,Día del pico de FAPAR,265.0,,0.029
+AGC_172,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00178,por día,0.028
+AGC_173,1,prec_mm_m05,Lluvia de mayo,230.69461,mm,-0.394
+AGC_173,2,lon,Longitud,-98.56163,°,-0.233
+AGC_173,3,prec_mm_m04,Lluvia de abril,17.16694,mm,-0.084
+AGC_173,4,tmax_c_m04,Temperatura máxima de abril,26.18112,°C,-0.048
+AGC_173,5,evi_auc,Integral de EVI,0.8543,,0.046
+AGC_173,6,nddi_pico,NDDI máximo,0.1328,,0.024
+AGC_173,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00367,por día,-0.023
+AGC_173,8,ndvi_auc_2023,NDVI acumulado 2023,2.95897,,0.023
+AGC_174,1,prec_mm_m05,Lluvia de mayo,122.10445,mm,0.204
+AGC_174,2,lon,Longitud,-98.30428,°,0.121
+AGC_174,3,prec_mm_m04,Lluvia de abril,12.18031,mm,-0.064
+AGC_174,4,tmax_c_m04,Temperatura máxima de abril,25.93642,°C,-0.056
+AGC_174,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00233,por día,0.033
+AGC_174,6,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00163,por día,-0.032
+AGC_174,7,tmin_c_m04,Temperatura mínima de abril,10.96937,°C,-0.031
+AGC_174,8,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00262,por día,0.026
+AGC_175,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.194
+AGC_175,2,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00014,por día,-0.189
+AGC_175,3,lon,Longitud,-98.24161,°,0.115
+AGC_175,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00244,por día,0.094
+AGC_175,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00142,por día,0.067
+AGC_175,6,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),292.0,,-0.061
+AGC_175,7,mcrc_doy_pico,Día del pico de MCRC,212.0,,-0.038
+AGC_175,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00022,por día,-0.037
+AGC_176,1,prec_mm_m05,Lluvia de mayo,111.25504,mm,0.25
+AGC_176,2,lon,Longitud,-98.23505,°,0.161
+AGC_176,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00186,por día,0.081
+AGC_176,4,prec_mm_m04,Lluvia de abril,10.35227,mm,0.038
+AGC_176,5,tmax_c_m04,Temperatura máxima de abril,25.81001,°C,0.031
+AGC_176,6,nddi_doy_pico,Día del pico de NDDI,142.0,,-0.028
+AGC_176,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00185,por día,-0.024
+AGC_176,8,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00275,por día,-0.023
+AGC_177,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.21
+AGC_177,2,lon,Longitud,-98.25328,°,0.119
+AGC_177,3,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00255,por día,0.039
+AGC_177,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_177,5,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.00198,por día,-0.027
+AGC_177,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00262,por día,-0.025
+AGC_177,7,mcrc_tasa_senescencia,Velocidad de senescencia MCRC,0.0,por día,-0.022
+AGC_177,8,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00511,por día,0.021
+AGC_178,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.214
+AGC_178,2,lon,Longitud,-98.29422,°,0.135
+AGC_178,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0022,por día,0.075
+AGC_178,4,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00286,por día,-0.049
+AGC_178,5,pendiente_grados,Pendiente del terreno,1.29399,°,-0.042
+AGC_178,6,fapar_doy_pico,Día del pico de FAPAR,236.0,,-0.041
+AGC_178,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00206,por día,0.036
+AGC_178,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.031
+AGC_179,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.24
+AGC_179,2,lon,Longitud,-98.22576,°,0.143
+AGC_179,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.044
+AGC_179,4,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00262,por día,-0.043
+AGC_179,5,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0035,por día,-0.027
+AGC_179,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00403,por día,0.025
+AGC_179,7,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00132,por día,-0.023
+AGC_179,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00456,por día,0.023
+AGC_180,1,prec_mm_m05,Lluvia de mayo,94.58489,mm,0.189
+AGC_180,2,lon,Longitud,-98.35097,°,0.108
+AGC_180,3,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01397,por día,-0.075
+AGC_180,4,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00028,por día,-0.039
+AGC_180,5,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00176,por día,0.032
+AGC_180,6,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0035,por día,-0.028
+AGC_180,7,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00111,por día,-0.025
+AGC_180,8,prec_mm_m04,Lluvia de abril,8.92602,mm,0.023
+AGC_181,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.232
+AGC_181,2,lon,Longitud,-98.25967,°,0.148
+AGC_181,3,dswi2_doy_pico,Día del pico de DSWI2,149.0,,-0.038
+AGC_181,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.035
+AGC_181,5,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00046,por día,-0.031
+AGC_181,6,mcrc_doy_pico,Día del pico de MCRC,150.0,,-0.028
+AGC_181,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00589,por día,0.028
+AGC_181,8,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00136,por día,-0.025
+AGC_182,1,prec_mm_m05,Lluvia de mayo,111.25504,mm,0.244
+AGC_182,2,lon,Longitud,-98.24406,°,0.151
+AGC_182,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00215,por día,0.074
+AGC_182,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00146,por día,0.074
+AGC_182,5,prec_mm_m04,Lluvia de abril,10.35227,mm,0.048
+AGC_182,6,tmin_c_m04,Temperatura mínima de abril,11.17985,°C,0.035
+AGC_182,7,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00664,por día,0.029
+AGC_182,8,fapar_doy_pico,Día del pico de FAPAR,242.0,,-0.029
+AGC_183,1,prec_mm_m05,Lluvia de mayo,188.36996,mm,-0.355
+AGC_183,2,lon,Longitud,-98.54983,°,-0.222
+AGC_183,3,prec_mm_m04,Lluvia de abril,12.6563,mm,-0.065
+AGC_183,4,tmax_c_m04,Temperatura máxima de abril,26.13612,°C,-0.055
+AGC_183,5,msi_tasa_verdeo,Velocidad de verdeo MSI,0.00018,por día,0.038
+AGC_183,6,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00108,por día,-0.036
+AGC_183,7,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00345,por día,-0.034
+AGC_183,8,ndti_doy_pico,Día del pico de NDTI,273.0,,-0.032
+AGC_184,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.232
+AGC_184,2,lon,Longitud,-98.2656,°,0.121
+AGC_184,3,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00243,por día,0.068
+AGC_184,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00025,por día,-0.045
+AGC_184,5,ndsvi_auc,Integral de NDSVI,0.82653,,0.037
+AGC_184,6,prec_mm_m04,Lluvia de abril,11.75078,mm,0.034
+AGC_184,7,pendiente_grados,Pendiente del terreno,0.62963,°,-0.025
+AGC_184,8,ndvi_auc,Integral de NDVI,0.90073,,0.023
+AGC_185,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.204
+AGC_185,2,lon,Longitud,-98.28151,°,0.114
+AGC_185,3,ndti_doy_pico,Día del pico de NDTI,279.0,,-0.059
+AGC_185,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00154,por día,0.055
+AGC_185,5,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00167,por día,-0.039
+AGC_185,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00447,por día,-0.038
+AGC_185,7,ndti_tasa_verdeo,Velocidad de verdeo NDTI,0.00125,por día,-0.035
+AGC_185,8,AREA_HA,Área de la parcela,11.88,ha,-0.034
+AGC_186,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.208
+AGC_186,2,lon,Longitud,-98.27749,°,0.119
+AGC_186,3,pendiente_grados,Pendiente del terreno,0.90017,°,-0.06
+AGC_186,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00178,por día,0.052
+AGC_186,5,ndti_doy_pico,Día del pico de NDTI,277.0,,-0.049
+AGC_186,6,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00281,por día,-0.047
+AGC_186,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00201,por día,0.04
+AGC_186,8,prec_mm_m04,Lluvia de abril,11.67972,mm,0.035
+AGC_187,1,prec_mm_m05,Lluvia de mayo,157.26573,mm,-0.364
+AGC_187,2,lon,Longitud,-98.57322,°,-0.219
+AGC_187,3,prec_mm_m04,Lluvia de abril,14.67236,mm,-0.05
+AGC_187,4,tmax_c_m04,Temperatura máxima de abril,26.21819,°C,-0.047
+AGC_187,5,nddi_pico,NDDI máximo,0.14308,,0.044
+AGC_187,6,crc_pico,CRC máximo,0.45348,,0.035
+AGC_187,7,ndwi_auc,Integral de NDWI,0.00502,,0.022
+AGC_187,8,nddi_doy_pico,Día del pico de NDDI,165.0,,-0.022
+AGC_188,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.237
+AGC_188,2,lon,Longitud,-98.23964,°,0.145
+AGC_188,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00217,por día,0.109
+AGC_188,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0013,por día,0.072
+AGC_188,5,prec_mm_m04,Lluvia de abril,9.67741,mm,0.045
+AGC_188,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00151,por día,-0.035
+AGC_188,7,fapar_doy_pico,Día del pico de FAPAR,251.0,,0.034
+AGC_188,8,pendiente_grados,Pendiente del terreno,3.4211,°,0.033
+AGC_189,1,prec_mm_m05,Lluvia de mayo,117.74245,mm,0.249
+AGC_189,2,lon,Longitud,-98.25477,°,0.152
+AGC_189,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00202,por día,0.08
+AGC_189,4,mcrc_doy_pico,Día del pico de MCRC,295.0,,-0.047
+AGC_189,5,prec_mm_m04,Lluvia de abril,11.75078,mm,0.038
+AGC_189,6,fapar_doy_pico,Día del pico de FAPAR,235.0,,-0.036
+AGC_189,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.0035,por día,-0.03
+AGC_189,8,tmax_c_m04,Temperatura máxima de abril,25.86499,°C,0.026
+AGC_190,1,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.243
+AGC_190,2,lon,Longitud,-98.23457,°,0.147
+AGC_190,3,prec_mm_m04,Lluvia de abril,9.67741,mm,0.041
+AGC_190,4,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00109,por día,0.039
+AGC_190,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0029,por día,-0.039
+AGC_190,6,tmin_c_m04,Temperatura mínima de abril,11.56274,°C,0.026
+AGC_190,7,crc_tasa_senescencia,Velocidad de senescencia CRC,-0.00091,por día,-0.026
+AGC_190,8,fapar_doy_pico,Día del pico de FAPAR,249.0,,0.025
+AGC_191,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.227
+AGC_191,2,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0019,por día,0.142
+AGC_191,3,lon,Longitud,-98.25096,°,0.137
+AGC_191,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.043
+AGC_191,5,fapar_doy_pico,Día del pico de FAPAR,273.0,,0.041
+AGC_191,6,pendiente_grados,Pendiente del terreno,8.31443,°,0.039
+AGC_191,7,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00278,por día,0.038
+AGC_191,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00015,por día,-0.031
+AGC_192,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00022,por día,-0.215
+AGC_192,2,prec_mm_m05,Lluvia de mayo,103.76583,mm,0.185
+AGC_192,3,lon,Longitud,-98.22749,°,0.116
+AGC_192,4,ndvi_doy_pico_pl,Día del pico de NDVI (Planet),266.0,,-0.07
+AGC_192,5,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00269,por día,-0.058
+AGC_192,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00242,por día,-0.054
+AGC_192,7,ndti_doy_pico,Día del pico de NDTI,278.0,,-0.049
+AGC_192,8,prec_mm_m04,Lluvia de abril,9.67741,mm,0.043
+AGC_193,1,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.0,por día,-0.217
+AGC_193,2,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.176
+AGC_193,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00232,por día,0.116
+AGC_193,4,lon,Longitud,-98.2743,°,0.097
+AGC_193,5,pendiente_grados,Pendiente del terreno,1.56406,°,-0.069
+AGC_193,6,crc_tasa_verdeo,Velocidad de verdeo CRC,9e-05,por día,-0.062
+AGC_193,7,prec_mm_m04,Lluvia de abril,11.67972,mm,0.035
+AGC_193,8,ndti_doy_pico,Día del pico de NDTI,276.0,,-0.033
+AGC_194,1,prec_mm_m05,Lluvia de mayo,139.35625,mm,-0.395
+AGC_194,2,lon,Longitud,-98.39236,°,-0.28
+AGC_194,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.00178,por día,0.075
+AGC_194,4,ndvi_tasa_senescencia_pl,Velocidad de senescencia NDVI (Planet),-0.00084,por día,0.073
+AGC_194,5,prec_mm_m04,Lluvia de abril,12.41364,mm,-0.065
+AGC_194,6,prec_mm_m06,Lluvia de junio,357.91553,mm,-0.04
+AGC_194,7,nddi_doy_pico,Día del pico de NDDI,148.0,,-0.036
+AGC_194,8,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00699,por día,0.033
+AGC_195,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.235
+AGC_195,2,lon,Longitud,-98.26506,°,0.139
+AGC_195,3,crc_tasa_verdeo,Velocidad de verdeo CRC,0.00272,por día,0.043
+AGC_195,4,prec_mm_m04,Lluvia de abril,11.67972,mm,0.036
+AGC_195,5,msi_tasa_senescencia,Velocidad de senescencia MSI,-0.002,por día,-0.034
+AGC_195,6,ndvi_tasa_senescencia,Velocidad de senescencia NDVI,-0.00148,por día,-0.031
+AGC_195,7,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00092,por día,0.027
+AGC_195,8,ndti_doy_pico,Día del pico de NDTI,247.0,,0.024
+AGC_196,1,prec_mm_m05,Lluvia de mayo,127.91256,mm,-0.316
+AGC_196,2,lon,Longitud,-98.57907,°,-0.211
+AGC_196,3,prec_mm_m04,Lluvia de abril,12.88983,mm,-0.058
+AGC_196,4,tmax_c_m04,Temperatura máxima de abril,26.21184,°C,-0.042
+AGC_196,5,lai_tasa_verdeo_pl,Velocidad de verdeo LAI (Planet),0.01784,por día,-0.041
+AGC_196,6,ndsvi_pico,NDSVI máximo,0.55938,,0.035
+AGC_196,7,ndvi_auc_2023,NDVI acumulado 2023,2.1899,,0.031
+AGC_196,8,nddi_doy_pico,Día del pico de NDDI,167.0,,-0.029
+AGC_197,1,prec_mm_m05,Lluvia de mayo,126.6069,mm,0.21
+AGC_197,2,lon,Longitud,-98.27467,°,0.135
+AGC_197,3,ndwi_tasa_verdeo,Velocidad de verdeo NDWI,0.0023,por día,0.08
+AGC_197,4,dswi2_tasa_verdeo,Velocidad de verdeo DSWI2,0.00226,por día,-0.035
+AGC_197,5,pendiente_grados,Pendiente del terreno,1.27881,°,-0.03
+AGC_197,6,prec_mm_m04,Lluvia de abril,11.67972,mm,0.029
+AGC_197,7,fapar_doy_pico,Día del pico de FAPAR,242.0,,-0.028
+AGC_197,8,nddi_tasa_verdeo,Velocidad de verdeo NDDI,0.00169,por día,0.025

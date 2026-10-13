@@ -20,8 +20,8 @@ Pasos del modelo:
   3. Modelo final: se re-optimiza sobre las 138 parcelas y se predicen las 59
      ocultas. El intervalo es empirico por candidato (cuantil 90 del error
      absoluto de la validacion estratificada).
-  4. El candidato congelado lo fija conf.MODELO_FINAL (CEBADATA_MODELO_FINAL).
-     El paso imprime ademas una recomendacion con la regla de ruido de 0.010.
+  4. El modelo que se sirve es la mezcla (conf.MODELO_FINAL). El paso imprime ademas
+     que recomienda la regla de ruido de 0.010, como justificacion para el reporte.
 
 Salidas (en salidas/):
   metricas_optimizadas.csv         estratificada: lgbm, rf, enet, ensamble, ubicacion, mezcla
@@ -232,7 +232,7 @@ def main():
     print(f"\nCuantil 90 del error absoluto (para intervalos): "
           + ", ".join(f"{c} {q90[c]:.3f}" for c in config.CANDIDATOS) + " t/ha")
     print(f"Recomendacion con la regla de ruido: {sugerido}. {motivo}")
-    print(f"Modelo congelado (CEBADATA_MODELO_FINAL): {config.MODELO_FINAL}"
+    print(f"Modelo que se sirve: {config.MODELO_FINAL}"
           + ("" if config.MODELO_FINAL == sugerido else "  <- distinto de la recomendacion"))
 
     modelo_final(d, cols, pred_est, q90)

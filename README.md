@@ -1,125 +1,130 @@
 # CebaData API
 
-Proyecto Django con el pipeline de datos y modelos del Reto AgroCebada FIRA 2026 y la API que consume el dashboard ([DashboardCebaData](https://github.com/ALNM7/DashboardCebaData), hecho en Angular).
+API de solo lectura del Reto AgroCebada FIRA 2026 y pipeline para reproducir el reporte. Sirve al dashboard ([DashboardCebaData](https://github.com/ALNM7/DashboardCebaData), hecho en Angular).
 
 Predice el rendimiento de cebada (t/ha) en 197 parcelas del altiplano de Hidalgo, Puebla y Tlaxcala, ciclo abril a octubre de 2025. En 138 se midió el rendimiento y las otras 59 son las que el modelo predice.
 
-## Qué hay en el repo
+## Cómo está organizado
 
 ```
-manage.py
-cebadata/            proyecto Django (settings, urls)
-pipeline/            app con el pipeline: pasos 01 a 09, modelos y comandos
-  conf.py            rutas y parámetros (dataset, salidas, modelo final)
-  modelado.py        los tres candidatos (ensamble, ubicación y mezcla) y su ajuste con Optuna
-  pasos/             paso01 a paso09, uno por archivo
-  comparar_suelo.py  veredicto sobre SoilGrids con la regla de ruido
-api/                 app con los modelos de base de datos, el simulador y los endpoints
-salidas/             tablas y modelo que escribe el pipeline (se versionan, pesan 2 MB)
-referencia_sin_suelo/ resultados de la versión sin SoilGrids, para comparar_suelo
-tests/               pruebas de la API y del pipeline
+artefactos/     lo único que lee la API: modelo, tablas y metadata (versionado, 2 MB)
+api/            app de Django: carga los artefactos al arrancar y sirve los endpoints
+cebadata/       proyecto Django (sin base de datos)
+tests/          pruebas de la API (pytest)
+pipeline/       entrenamiento y exportación; la API no lo importa ni lo necesita
 ```
 
-## Cómo correrlo
+El backend en tiempo de ejecución no corre el pipeline. Entrena una vez fuera de la API, exporta `artefactos/` y la API los carga una sola vez al arrancar.
 
-Necesitas Python 3.10 o mayor.
+## Modelo único: la mezcla
+
+El modelo que se sirve es la **mezcla**: el promedio de dos predicciones.
+
+- el **ensamble** (promedio de LightGBM, Random Forest y Elastic Net con 121 variables de clima, satélite, topografía y ubicación), y
+- un **LightGBM que solo usa la longitud**, que es lo que encontró el superciclo de modelos clásicos del compañero.
+
+Pesos: cada miembro del ensamble pesa 1/6 y el modelo de longitud pesa 1/2.
+
+### Por qué la mezcla
+
+El paso 07 del pipeline comparó tres enfoques con las mismas 138 parcelas y dos validaciones anidadas (Optuna solo ve el fold de entrenamiento). La estratificada por municipio mide lo que se va a calificar; LOMO deja un municipio completo fuera y mide una zona nueva de la región.
+
+| Enfoque | Variables | RMSE donde se califica | MAE | RMSE zona nueva (LOMO) | Sesgo LOMO |
+|---|---|---|---|---|---|
+| Ensamble | 121 | 0.508 | 0.362 | 0.722 | -0.102 |
+| Solo ubicación | 1 | 0.525 | 0.364 | 0.539 | +0.077 |
+| **Mezcla** | 122 | **0.508** | **0.354** | 0.595 | -0.013 |
+
+Donde se califica, ensamble y mezcla empatan en RMSE (la diferencia es menor a 0.010 t/ha, dentro del ruido) y la mezcla tiene el mejor MAE. En zona nueva la ubicación sola es la mejor, la mezcla queda 0.056 por encima y el ensamble se cae. La mezcla es la que mejor equilibra las dos pruebas: no pierde donde se califica y recorta casi la mitad de la caída del ensamble en zonas nuevas. Esta tabla viaja también en `metricas_dashboard.json` para el panel de metodología del dashboard.
+
+Referencias: predecir la media da 0.846 en la validación estratificada. En LOMO la media de las demás zonas da 1.153 porque al sacar Chignahuapan (la mitad de los datos) el promedio del resto cae mucho; por eso conviene citar el 0.846.
+
+### Límites que hay que decir tal cual
+
+- El modelo aprendió de una sola temporada.
+- La longitud solo funciona porque aquí el rendimiento cambia de oeste a este dentro de una caja de unos 45 km. Fuera de esta región ninguno es confiable; para usarlo ahí hacen falta rendimientos de esa zona para reentrenar.
+- Con la mezcla solo la parte del ensamble reacciona al clima, así que en el simulador el efecto sale la mitad de grande que con el ensamble solo.
+- La lluvia de mayo también puede estar actuando como indicador de zona, así que su peso no prueba por sí solo que la lluvia cause el rendimiento.
+- En Tlaxcala el rendimiento solo toma tres valores (2.5, 3.0 y 3.5), lo que parece una estimación por zona.
+- Es una herramienta de apoyo y no sustituye la evaluación crediticia.
+
+## Levantar la API
+
+Necesitas Python 3.13 (el de `.python-version`). Las versiones de numpy, pandas, scikit-learn, lightgbm y joblib están fijadas porque son las del entrenamiento: los `.joblib` se cargan con ellas.
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate     # en Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-python manage.py migrate
-python manage.py cargar_resultados      # lee salidas/ y llena la base de datos
-python manage.py runserver              # http://localhost:8000
+python manage.py runserver                              # http://localhost:8000
 ```
-
-Con eso la API ya responde, porque `salidas/` trae los resultados de la última corrida. Para probarla:
 
 ```bash
 curl http://localhost:8000/api/salud
 curl http://localhost:8000/api/parcelas/AGC_003
 ```
 
-El dashboard (ng serve en el puerto 4200) pide los datos a `http://localhost:8000`. Si lo sirves desde otro origen, pásalo en `CORS_ALLOWED_ORIGINS` (varios separados por coma).
+Al arrancar valida `artefactos/`: versión del formato, checksums sha256 de los `.joblib` y que scikit-learn y lightgbm instalados sean los del entrenamiento. Si algo no cuadra no arranca y dice qué. Para servir otra carpeta de artefactos: `CEBADATA_ARTEFACTOS=/ruta`.
+
+El dashboard (`ng serve` en el 4200) pide los datos a `http://localhost:8000`. Si lo sirves desde otro origen, pásalo en `CORS_ALLOWED_ORIGINS` (varios separados por coma).
 
 ### Pruebas
 
 ```bash
+pip install -r requirements-dev.txt
 python -m pytest
 ```
+
+Incluyen la **prueba de paridad**: con los artefactos cargados la API reproduce las predicciones de las 59 parcelas (contra la tabla con 1e-9 y contra `pipeline/salidas/predicciones_59_parcelas.csv` redondeando a 3 decimales), y verifica que los pins de `requirements.txt`, los del pipeline y los de `metadata.json` coincidan, y que la API no importe el pipeline.
 
 ## Endpoints
 
 | Método | Ruta | Respuesta |
 |---|---|---|
-| GET | `/api/salud` | estado del servicio y si ya hay resultados cargados |
-| GET | `/api/parcelas` | lista de las 197 parcelas con su predicción e intervalo |
-| GET | `/api/parcelas/<id>` | `{ parcela, otros_enfoques, serie, clima, shap, shap_otras, base, vecinos }` |
-| GET | `/api/modelo/metricas` | métricas, comparación de candidatos, dispersión, importancias, robustez y hallazgos |
-| POST | `/api/simulador` | recibe `{ id, delta_lluvia_mayo_pct, delta_tmin_abril_c }` y devuelve el escenario |
+| GET | `/api/salud` | estado, modelo y fecha de los artefactos |
+| GET | `/api/parcelas` | las 197 parcelas con predicción e intervalo |
+| GET | `/api/parcelas/<id>` | `{ parcela, serie, clima, shap, shap_otras, base, vecinos }` |
+| GET | `/api/modelo/metricas` | métricas de la mezcla (estratificada y LOMO), dispersión, importancias, robustez, hallazgos y la tabla de comparación para la metodología |
+| POST | `/api/simulador` | recibe `{ id, delta_lluvia_mayo_pct, delta_tmin_abril_c }` |
 
-`/api/parcelas` y `/api/parcelas/<id>` aceptan `?modelo=ensamble|ubicacion|mezcla`. Sin parámetro usan el modelo congelado. El simulador acepta `modelo` en el cuerpo.
+Las predicciones salen de `artefactos/tablas/predicciones.csv`, no se recalculan. En las parcelas medidas es la predicción fuera de muestra (validación cruzada); en las 59 ocultas, la del modelo final. El intervalo es la predicción más/menos el cuantil 90 del error absoluto de CV de la mezcla (0.749 t/ha).
 
-En las parcelas medidas, `rendimiento_pred` es la predicción fuera de muestra (validación cruzada), no un ajuste sobre datos que el modelo ya vio. En las 59 ocultas es la del modelo final. El intervalo es la predicción más/menos el cuantil 90 del error absoluto de la validación estratificada de ese candidato.
+### Simulador
 
-## Los tres candidatos
+Sobre una parcela existente cambia la lluvia de mayo (de -40 % a +40 %) y la temperatura mínima de abril (de -2 a +2 °C), recalcula las variables del ciclo que dependen de esos meses (meses secos y anomalía de lluvia) y predice con la mezcla. La respuesta trae la base, el escenario con su intervalo (que se ensancha con el tamaño del cambio), la diferencia y `fuera_de_rango` con las variables que salieron del rango de entrenamiento. La predicción del escenario es la predicción mostrada más el cambio que calcula el modelo, así la base coincide siempre con el mapa y la ficha.
 
-El paso 07 compara tres enfoques bajo las mismas reglas y las mismas 138 parcelas:
+## Regenerar los artefactos
 
-| | Qué es |
-|---|---|
-| **A. Ensamble** | LightGBM, Random Forest y Elastic Net con 121 variables (clima, satélite, topografía, ubicación) |
-| **B. Ubicación** | LightGBM que solo usa la longitud. Es lo que encontró el superciclo de modelos clásicos |
-| **C. Mezcla** | Promedio de las predicciones de A y B |
-
-Dos validaciones, las dos anidadas (Optuna solo ve el fold de entrenamiento):
-
-- **Estratificada por municipio** (5 folds x 3 repeticiones). Mide lo que se va a calificar, porque las 59 ocultas están en los mismos municipios que las de entrenamiento.
-- **LOMO** (un municipio completo fuera en cada ronda). Mide qué tan bien funciona en una zona nueva de la región.
-
-Resultados de la última corrida (RMSE en t/ha, `salidas/comparacion_candidatos.csv`):
-
-| Candidato | Estratificada | MAE | LOMO |
-|---|---|---|---|
-| A. Ensamble | 0.508 | 0.362 | 0.722 |
-| B. Ubicación | 0.525 | 0.364 | 0.539 |
-| C. Mezcla | 0.508 | 0.354 | 0.595 |
-
-Cómo leerlo:
-
-- Donde se califica, A y C empatan en RMSE (la diferencia es mucho menor que 0.010) y C tiene el mejor MAE. B queda 0.017 por detrás.
-- En zonas nuevas B es el mejor, C queda a 0.056 y A se cae (0.722). La mezcla recorta mucho el problema de A, pero no lo elimina.
-- Si solo se predijera la media de las demás zonas, el RMSE en LOMO sería 1.153, no 0.846. Ese baseline infla la mejora, por eso conviene citar siempre el 0.846 de la validación estratificada.
-- El sesgo de B en LOMO es +0.077 t/ha: en promedio sobreestima.
-
-### Qué modelo queda congelado
-
-Lo fija `CEBADATA_MODELO_FINAL` (`ensamble`, `ubicacion` o `mezcla`; por defecto `mezcla`). El paso 07 imprime además una recomendación con una regla fija: se consideran empatados los candidatos a menos de 0.010 t/ha del mejor RMSE estratificado, y entre ellos se elige el de menor RMSE en LOMO. Con los resultados actuales recomienda la mezcla. Si el modelo que configuras no coincide con la recomendación, el paso lo avisa.
-
-Para cambiar de modelo basta repetir los pasos 07 a 09 con otra variable:
+Solo hace falta si cambia el modelo o los datos. Se hace fuera de la API, con el entorno del pipeline:
 
 ```bash
-CEBADATA_MODELO_FINAL=ensamble python manage.py run_pipeline --desde 7 --cargar
+python3 -m venv .venv-pipeline && source .venv-pipeline/bin/activate
+pip install -r pipeline/requirements-pipeline.txt
+
+# dataset del reto: descomprimido en DATASET_RETO_AGRO_2026/ (raíz del repo) o apuntado con
+# CEBADATA_DATASET; los zips internos de clima y topografía van extraídos en carpetas del mismo nombre
+python -m pipeline.run_pipeline                  # pasos 01 a 10 (unos 8 minutos)
+python -m pipeline.run_pipeline --desde 10       # solo reexportar artefactos/ con lo que ya hay en pipeline/salidas
+python -m pytest pipeline/tests -p no:django     # pruebas del pipeline
 ```
 
-### Qué muestra el dashboard por parcela
+Después revisa `git diff artefactos/`, corre las pruebas de la API y haz commit. Si cambias una de las cinco librerías de ML, cámbiala igual en `requirements.txt` y en `pipeline/requirements-pipeline.txt` (una prueba lo verifica) y regenera.
 
-La explicación por parcela (cascada tipo SHAP) viene de la parte A. El modelo de ubicación solo tiene una variable y no tiene nada que contar. Lo que falta para llegar a la predicción final (variables fuera de las 8 principales, ajuste de los otros modelos del ensamble y la mezcla con la ubicación) se agrupa en "otras variables". En las parcelas medidas el SHAP sale de un LightGBM entrenado sin esa parcela, igual que su predicción fuera de muestra.
+## Qué contiene `artefactos/`
 
-### El simulador
-
-El simulador cambia la lluvia de mayo (de -40 % a +40 %) y la temperatura mínima de abril (de -2 a +2 °C) en la fila de la parcela, recalcula las variables del ciclo que dependen de esos meses (lluvia total, anomalía, meses secos, grados-día) y vuelve a predecir con el modelo guardado. La predicción del escenario es la predicción mostrada de la parcela más el cambio que calcula el modelo. Avisa cuando el escenario sale del rango de entrenamiento y ensancha el intervalo.
-
-Ojo con la lectura: es la sensibilidad que aprendió el modelo, no una relación causal comprobada. En esta región la lluvia de mayo también funciona como indicador de zona. Además, con la mezcla solo la mitad de la predicción (la parte A) reacciona al clima, así que el efecto sale más chico que con el ensamble solo.
+```
+metadata.json            orden exacto de las 121 variables, pesos de la mezcla, versiones de librerías,
+                         cuantil del intervalo, métricas, rango min/max de cada variable en entrenamiento,
+                         etiquetas, zonas de entrenamiento y checksums
+metricas_dashboard.json  lo que muestran "Desempeño del modelo" y "Hallazgos"
+modelo/                  imputador, escalador, lgbm, rf, enet y lgbm_longitud (joblib)
+tablas/                  parcelas, predicciones, features_modelo, shap_parcela, clima_mensual,
+                         serie_satelital (curvas de Sentinel-2 y Planet) y vecinos
+```
 
 ## El pipeline
 
-Los pasos corren en orden con un solo comando:
-
-```bash
-python manage.py run_pipeline                       # pasos 01 a 09
-python manage.py run_pipeline --desde 7 --cargar    # solo modelado, y luego carga la base
-```
+`pipeline/` queda en el repo solo para reproducibilidad del reporte. Los pasos corren en orden con `python -m pipeline.run_pipeline`:
 
 | Paso | Qué hace |
 |---|---|
@@ -128,59 +133,48 @@ python manage.py run_pipeline --desde 7 --cargar    # solo modelado, y luego car
 | 03 | Clima mensual y topografía por parcela |
 | 04 | 22 validaciones de integridad; truena si algo no cuadra |
 | 05 | Tabla de modelado: fenología por índice, clima, historia y estáticos |
-| 05b | (opcional, requiere internet) suelo de SoilGrids: `python manage.py paso_soilgrids` |
+| 05b | (opcional, requiere internet) suelo de SoilGrids: `python -m pipeline.pasos.paso05b_soilgrids` |
 | 06 | Baselines con CV repetida estratificada por municipio |
-| 07 | Poda de redundancia, Optuna anidado, los tres candidatos con las dos validaciones, modelo final y predicciones |
+| 07 | Poda de redundancia, Optuna anidado, comparación de los tres enfoques con las dos validaciones, modelo final y predicciones |
 | 08 | SHAP global, ablación por bloques y robustez espacial |
-| 09 | SHAP por parcela para la ficha del dashboard |
+| 09 | SHAP por parcela para la ficha |
+| 10 | Exporta `artefactos/` |
 
-Los pasos 01 a 04 necesitan la carpeta `DATASET_RETO_AGRO_2026/` del reto. No se versiona: cópiala junto a `manage.py` o apunta `CEBADATA_DATASET` a donde la tengas. Los CSV y el shapefile van sueltos; los zips de clima y topografía deben estar extraídos en carpetas con el mismo nombre del zip. `geopandas` y `rasterio` traen dependencias binarias; con un `pip` reciente se instalan sin compilar. Si falla en Windows, usa conda: `conda install -c conda-forge geopandas rasterio`.
-
-Desde el paso 05 solo hace falta lo que ya está en `salidas/`, pero el paso 05 vuelve a leer los CSV satelitales (`satelital_s2.csv` y `satelital_planet.csv`), que se generan en el paso 02 y no se versionan por su tamaño. Los pasos 06 a 09 sí corren con lo que trae el repo.
-
-### Curvas satelitales de la ficha
-
-La curva del índice por parcela sale de `salidas/satelital_s2.csv` y `salidas/satelital_planet.csv`. Si no existen, `cargar_resultados` lo avisa y la ficha muestra "Sin observaciones". Para llenarla corre los pasos 01 a 03 con el dataset y vuelve a cargar los resultados. Planet solo trae NDVI, EVI y LAI; NDDI y NDWI solo existen en Sentinel-2.
+Con el dataset del reto la corrida reproduce exactamente los números de arriba (los CSV de los pasos 01 a 05 quedaron idénticos a los que ya estaban versionados en `pipeline/salidas/`).
 
 ### Datos externos: SoilGrids (probado y descartado)
 
-El suelo de SoilGrids 2.0 (Poggio et al. 2021, https://doi.org/10.5194/soil-7-217-2021) se probó con una regla fija que se fijó antes de correrlo: se adopta solo si baja el RMSE del ensamble al menos 0.010 t/ha y la ablación pareada lo confirma. No la pasó (+0.0013 en la validación anidada, -0.0023 en la ablación pareada, que está dentro del ruido). El paso queda cableado por si se quiere repetir:
+El suelo de SoilGrids 2.0 (Poggio et al. 2021, https://doi.org/10.5194/soil-7-217-2021) se probó con una regla fijada antes de correrlo: se adopta solo si baja el RMSE del ensamble al menos 0.010 t/ha y la ablación pareada lo confirma. No la pasó (+0.0013 en la validación anidada, -0.0023 en la ablación pareada, dentro del ruido). Los datos de INEGI (edafología y nitrógeno) que usó el superciclo tampoco la pasan (de 0.550 a 0.542 son 0.008 t/ha). Para repetir la prueba:
 
 ```bash
-python manage.py paso_soilgrids
-python manage.py run_pipeline --desde 5 --cargar
-python manage.py comparar_suelo
+python -m pipeline.pasos.paso05b_soilgrids
+python -m pipeline.run_pipeline --desde 5
+python -m pipeline.comparar_suelo
 ```
 
-`comparar_suelo` ya no dice "el suelo ayuda" cuando la diferencia es menor a 0.010: dice que está dentro del ruido. Entre corridas hay variaciones de casi 0.01 por sí solas (la ablación de todo pasó de 0.508 a 0.515 sin cambiar nada importante).
+### Decisiones metodológicas (para el reporte técnico)
 
-Los datos externos de INEGI (edafología y nitrógeno) que usó el superciclo tampoco pasan esa regla (de 0.550 a 0.542 son 0.008 t/ha) y no se usan.
-
-## Decisiones metodológicas (para el reporte técnico)
-
-- El identificador del shapefile viene truncado como `ID_POLIGON`; se renombra a `ID_POLIGONO` para unificar la llave.
+- El identificador del shapefile viene truncado como `ID_POLIGON`; se renombra a `ID_POLIGONO`.
 - El CSV de rendimiento trae una columna vacía sin nombre; se descarta.
-- Umbral de nubosidad de 20 %: por debajo de él, menos del 1 % de los índices viene nulo y toda parcela conserva al menos 26 observaciones S2 dentro del ciclo. El umbral es un parámetro en `pipeline/conf.py`.
-- El clima se muestrea en el centroide de la parcela porque el píxel de CHIRPS/CHIRTS (unos 5 km) es mucho más grande que cualquier parcela; la topografía (píxel de 120 m) sí se promedia zonalmente con `all_touched=True`.
-- Ninguna fila satelital se elimina: el filtrado queda como bandera para que cada experimento decida.
-- Planet y Sentinel-2 se mantienen como fuentes separadas, como advierte el diccionario del reto.
-- La validación es anidada: Optuna solo ve el fold de entrenamiento, así que las cifras no están infladas por la búsqueda de hiperparámetros.
+- Umbral de nubosidad de 20 %: por debajo, menos del 1 % de los índices viene nulo y toda parcela conserva al menos 26 observaciones S2 dentro del ciclo. Es un parámetro en `pipeline/conf.py`.
+- El clima se muestrea en el centroide de la parcela porque el píxel de CHIRPS/CHIRTS (unos 5 km) es mucho más grande que cualquier parcela; la topografía (píxel de 120 m) se promedia zonalmente con `all_touched=True`.
+- Ninguna fila satelital se elimina: el filtrado queda como bandera.
+- Planet y Sentinel-2 se mantienen como fuentes separadas.
 
-## Límites que hay que decir tal cual
+## Despliegue en Render o Railway
 
-- El modelo aprendió de una sola temporada.
-- La longitud solo funciona porque aquí el rendimiento cambia de oeste a este dentro de una caja de unos 45 km. Fuera de esta región (otro estado o valle) ningún candidato es confiable; para usarlo ahí hacen falta datos de rendimiento de esa zona para reentrenar.
-- En Tlaxcala el rendimiento solo toma tres valores (2.5, 3.0 y 3.5), lo que parece una estimación por zona y no una medición por parcela.
-- Es una herramienta de apoyo y no sustituye la evaluación crediticia.
+El backend es ligero (sin base de datos, sin pipeline, un worker de gunicorn con unos 160 MB).
 
-## Variables de entorno
+- **Render:** conecta el repo; `render.yaml` ya trae el servicio. Ajusta `DJANGO_ALLOWED_HOSTS` al dominio del servicio y `CORS_ALLOWED_ORIGINS` al del dashboard.
+- **Railway:** `railway.json` y `Procfile` ya traen el comando de arranque y el healthcheck `/api/salud`. Define las mismas variables.
 
 | Variable | Para qué | Por defecto |
 |---|---|---|
-| `CEBADATA_MODELO_FINAL` | candidato congelado | `mezcla` |
-| `CEBADATA_DATASET` | ruta a `DATASET_RETO_AGRO_2026` | junto a `manage.py` |
-| `CEBADATA_SALIDAS` | carpeta de salidas | `salidas/` |
-| `DJANGO_DEBUG` | `1` o `0` | `1` |
 | `DJANGO_SECRET_KEY` | obligatoria con `DJANGO_DEBUG=0` | |
+| `DJANGO_DEBUG` | `1` o `0` | `1` |
 | `DJANGO_ALLOWED_HOSTS` | hosts separados por coma | `localhost,127.0.0.1` |
 | `CORS_ALLOWED_ORIGINS` | orígenes del front separados por coma | `http://localhost:4200,http://127.0.0.1:4200` |
+| `CEBADATA_ARTEFACTOS` | carpeta de artefactos | `artefactos/` |
+| `WEB_CONCURRENCY` | workers de gunicorn | `1` |
+
+El arranque usa `--preload`: los artefactos se cargan una vez en el proceso maestro y los workers los heredan. Los modelos se fijan en `n_jobs=1` al cargarlos porque con varios hilos de OpenMP el worker se bloqueaba tras el fork.

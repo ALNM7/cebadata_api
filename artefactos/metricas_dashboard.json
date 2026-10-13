@@ -1,0 +1,1385 @@
+{
+ "modelo": {
+  "nombre": "Mezcla",
+  "descripcion": "Promedio de las predicciones del ensamble y del modelo de ubicación.",
+  "n_variables": 122
+ },
+ "validacion": {
+  "esquema": "Validación cruzada anidada estratificada por municipio",
+  "rmse": 0.508,
+  "mae": 0.354,
+  "r2": 0.64,
+  "sesgo": 0.005,
+  "baseline": {
+   "nombre": "Predecir el promedio",
+   "rmse": 0.846,
+   "r2": 0
+  }
+ },
+ "lomo": {
+  "esquema": "Un municipio completo fuera en cada ronda (LOMO)",
+  "rmse": 0.595,
+  "mae": 0.473,
+  "r2": 0.51,
+  "sesgo": -0.013,
+  "baseline": {
+   "nombre": "Promedio de las demás zonas",
+   "rmse": 1.153,
+   "r2": -0.85
+  }
+ },
+ "comparacion": [
+  {
+   "id": "ensamble",
+   "nombre": "Ensamble",
+   "descripcion": "LightGBM, Random Forest y Elastic Net con todas las variables.",
+   "elegido": false,
+   "n_variables": 121,
+   "estratificada": {
+    "rmse": 0.508,
+    "mae": 0.362,
+    "r2": 0.64,
+    "sesgo": 0.0
+   },
+   "lomo": {
+    "rmse": 0.722,
+    "mae": 0.6,
+    "r2": 0.28,
+    "sesgo": -0.102
+   }
+  },
+  {
+   "id": "ubicacion",
+   "nombre": "Solo ubicación",
+   "descripcion": "LightGBM que solo usa la longitud. Es lo que encontró el análisis de modelos clásicos.",
+   "elegido": false,
+   "n_variables": 1,
+   "estratificada": {
+    "rmse": 0.525,
+    "mae": 0.364,
+    "r2": 0.62,
+    "sesgo": 0.011
+   },
+   "lomo": {
+    "rmse": 0.539,
+    "mae": 0.378,
+    "r2": 0.6,
+    "sesgo": 0.077
+   }
+  },
+  {
+   "id": "mezcla",
+   "nombre": "Mezcla",
+   "descripcion": "Promedio de las predicciones del ensamble y del modelo de ubicación.",
+   "elegido": true,
+   "n_variables": 122,
+   "estratificada": {
+    "rmse": 0.508,
+    "mae": 0.354,
+    "r2": 0.64,
+    "sesgo": 0.005
+   },
+   "lomo": {
+    "rmse": 0.595,
+    "mae": 0.473,
+    "r2": 0.51,
+    "sesgo": -0.013
+   }
+  }
+ ],
+ "dispersion": [
+  {
+   "id": "AGC_196",
+   "estado": "Hidalgo",
+   "municipio": "Emiliano Zapata",
+   "obs": 3.5,
+   "pred": 3.19
+  },
+  {
+   "id": "AGC_044",
+   "estado": "Hidalgo",
+   "municipio": "Emiliano Zapata",
+   "obs": 3.5,
+   "pred": 3.09
+  },
+  {
+   "id": "AGC_020",
+   "estado": "Hidalgo",
+   "municipio": "Emiliano Zapata",
+   "obs": 3.5,
+   "pred": 3.16
+  },
+  {
+   "id": "AGC_083",
+   "estado": "Hidalgo",
+   "municipio": "Cuautepec de Hinojosa",
+   "obs": 4.61,
+   "pred": 4.44
+  },
+  {
+   "id": "AGC_009",
+   "estado": "Hidalgo",
+   "municipio": "Cuautepec de Hinojosa",
+   "obs": 4.79,
+   "pred": 4.4
+  },
+  {
+   "id": "AGC_119",
+   "estado": "Hidalgo",
+   "municipio": "Cuautepec de Hinojosa",
+   "obs": 4.4,
+   "pred": 4.44
+  },
+  {
+   "id": "AGC_064",
+   "estado": "Hidalgo",
+   "municipio": "Cuautepec de Hinojosa",
+   "obs": 4.51,
+   "pred": 4.47
+  },
+  {
+   "id": "AGC_035",
+   "estado": "Hidalgo",
+   "municipio": "Cuautepec de Hinojosa",
+   "obs": 4.68,
+   "pred": 4.31
+  },
+  {
+   "id": "AGC_047",
+   "estado": "Hidalgo",
+   "municipio": "Tepeapulco",
+   "obs": 4.45,
+   "pred": 3.61
+  },
+  {
+   "id": "AGC_084",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.54,
+   "pred": 4.43
+  },
+  {
+   "id": "AGC_151",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.69,
+   "pred": 4.47
+  },
+  {
+   "id": "AGC_137",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.54,
+   "pred": 4.46
+  },
+  {
+   "id": "AGC_152",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.87,
+   "pred": 4.47
+  },
+  {
+   "id": "AGC_051",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.45,
+   "pred": 4.37
+  },
+  {
+   "id": "AGC_059",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.41,
+   "pred": 4.37
+  },
+  {
+   "id": "AGC_184",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.47,
+   "pred": 4.38
+  },
+  {
+   "id": "AGC_146",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.58,
+   "pred": 4.3
+  },
+  {
+   "id": "AGC_180",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.14,
+   "pred": 4.36
+  },
+  {
+   "id": "AGC_134",
+   "estado": "Hidalgo",
+   "municipio": "Almoloya",
+   "obs": 4.52,
+   "pred": 4.34
+  },
+  {
+   "id": "AGC_041",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 2.5,
+   "pred": 3.4
+  },
+  {
+   "id": "AGC_166",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 2.5,
+   "pred": 3.4
+  },
+  {
+   "id": "AGC_081",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.7,
+   "pred": 3.4
+  },
+  {
+   "id": "AGC_034",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 2.0,
+   "pred": 3.5
+  },
+  {
+   "id": "AGC_079",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.3,
+   "pred": 3.25
+  },
+  {
+   "id": "AGC_070",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.3,
+   "pred": 3.13
+  },
+  {
+   "id": "AGC_038",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.3,
+   "pred": 3.12
+  },
+  {
+   "id": "AGC_194",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.2,
+   "pred": 3.21
+  },
+  {
+   "id": "AGC_078",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.0,
+   "pred": 3.19
+  },
+  {
+   "id": "AGC_121",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.3,
+   "pred": 3.15
+  },
+  {
+   "id": "AGC_148",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.0,
+   "pred": 3.06
+  },
+  {
+   "id": "AGC_067",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.0,
+   "pred": 3.25
+  },
+  {
+   "id": "AGC_089",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.0,
+   "pred": 3.15
+  },
+  {
+   "id": "AGC_007",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.5,
+   "pred": 3.18
+  },
+  {
+   "id": "AGC_080",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.5,
+   "pred": 3.15
+  },
+  {
+   "id": "AGC_140",
+   "estado": "Hidalgo",
+   "municipio": "Singuilucan",
+   "obs": 3.2,
+   "pred": 3.18
+  },
+  {
+   "id": "AGC_092",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.57,
+   "pred": 4.63
+  },
+  {
+   "id": "AGC_060",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.52,
+   "pred": 4.6
+  },
+  {
+   "id": "AGC_115",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.6,
+   "pred": 4.27
+  },
+  {
+   "id": "AGC_097",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.69,
+   "pred": 4.55
+  },
+  {
+   "id": "AGC_185",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.01,
+   "pred": 4.32
+  },
+  {
+   "id": "AGC_108",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.51,
+   "pred": 4.68
+  },
+  {
+   "id": "AGC_181",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.51,
+   "pred": 4.37
+  },
+  {
+   "id": "AGC_006",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.49,
+   "pred": 4.54
+  },
+  {
+   "id": "AGC_109",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.54,
+   "pred": 4.56
+  },
+  {
+   "id": "AGC_077",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.76,
+   "pred": 4.36
+  },
+  {
+   "id": "AGC_105",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.41,
+   "pred": 4.42
+  },
+  {
+   "id": "AGC_096",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.59,
+   "pred": 4.3
+  },
+  {
+   "id": "AGC_176",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.38,
+   "pred": 4.53
+  },
+  {
+   "id": "AGC_155",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.52,
+   "pred": 4.65
+  },
+  {
+   "id": "AGC_100",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.5,
+   "pred": 4.4
+  },
+  {
+   "id": "AGC_135",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.49,
+   "pred": 4.63
+  },
+  {
+   "id": "AGC_018",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.49,
+   "pred": 4.41
+  },
+  {
+   "id": "AGC_106",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.43,
+   "pred": 4.24
+  },
+  {
+   "id": "AGC_033",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.47,
+   "pred": 4.64
+  },
+  {
+   "id": "AGC_150",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.52,
+   "pred": 4.39
+  },
+  {
+   "id": "AGC_104",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.56,
+   "pred": 4.34
+  },
+  {
+   "id": "AGC_167",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.54,
+   "pred": 4.53
+  },
+  {
+   "id": "AGC_002",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.63,
+   "pred": 4.34
+  },
+  {
+   "id": "AGC_178",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.39,
+   "pred": 4.37
+  },
+  {
+   "id": "AGC_125",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.06,
+   "pred": 4.36
+  },
+  {
+   "id": "AGC_162",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.59,
+   "pred": 4.38
+  },
+  {
+   "id": "AGC_057",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.55,
+   "pred": 4.58
+  },
+  {
+   "id": "AGC_197",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.52,
+   "pred": 4.34
+  },
+  {
+   "id": "AGC_073",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.3,
+   "pred": 4.38
+  },
+  {
+   "id": "AGC_171",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 2.15,
+   "pred": 4.36
+  },
+  {
+   "id": "AGC_111",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.72,
+   "pred": 4.6
+  },
+  {
+   "id": "AGC_015",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 2.64,
+   "pred": 4.61
+  },
+  {
+   "id": "AGC_110",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.18,
+   "pred": 4.31
+  },
+  {
+   "id": "AGC_032",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.03,
+   "pred": 4.54
+  },
+  {
+   "id": "AGC_024",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.03,
+   "pred": 4.34
+  },
+  {
+   "id": "AGC_045",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.1,
+   "pred": 4.46
+  },
+  {
+   "id": "AGC_195",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.68,
+   "pred": 4.39
+  },
+  {
+   "id": "AGC_005",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.16,
+   "pred": 4.52
+  },
+  {
+   "id": "AGC_102",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.4,
+   "pred": 4.5
+  },
+  {
+   "id": "AGC_127",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.57,
+   "pred": 4.48
+  },
+  {
+   "id": "AGC_101",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.57,
+   "pred": 4.44
+  },
+  {
+   "id": "AGC_017",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.98,
+   "pred": 4.53
+  },
+  {
+   "id": "AGC_072",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.55,
+   "pred": 4.46
+  },
+  {
+   "id": "AGC_159",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.77,
+   "pred": 4.55
+  },
+  {
+   "id": "AGC_168",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.49,
+   "pred": 4.44
+  },
+  {
+   "id": "AGC_132",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.13,
+   "pred": 4.56
+  },
+  {
+   "id": "AGC_062",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.81,
+   "pred": 4.39
+  },
+  {
+   "id": "AGC_056",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.07,
+   "pred": 4.58
+  },
+  {
+   "id": "AGC_055",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.45,
+   "pred": 4.64
+  },
+  {
+   "id": "AGC_179",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.55,
+   "pred": 4.57
+  },
+  {
+   "id": "AGC_139",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.67,
+   "pred": 4.25
+  },
+  {
+   "id": "AGC_133",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.91,
+   "pred": 4.6
+  },
+  {
+   "id": "AGC_013",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.01,
+   "pred": 4.54
+  },
+  {
+   "id": "AGC_189",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.03,
+   "pred": 4.44
+  },
+  {
+   "id": "AGC_160",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.62,
+   "pred": 4.53
+  },
+  {
+   "id": "AGC_124",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.05,
+   "pred": 4.68
+  },
+  {
+   "id": "AGC_172",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.19,
+   "pred": 4.61
+  },
+  {
+   "id": "AGC_026",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 3.55,
+   "pred": 4.47
+  },
+  {
+   "id": "AGC_010",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.1,
+   "pred": 4.35
+  },
+  {
+   "id": "AGC_008",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.55,
+   "pred": 4.3
+  },
+  {
+   "id": "AGC_012",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.69,
+   "pred": 4.64
+  },
+  {
+   "id": "AGC_049",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.53,
+   "pred": 4.61
+  },
+  {
+   "id": "AGC_090",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.68,
+   "pred": 4.45
+  },
+  {
+   "id": "AGC_131",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.89,
+   "pred": 4.41
+  },
+  {
+   "id": "AGC_022",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.55,
+   "pred": 4.33
+  },
+  {
+   "id": "AGC_014",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.83,
+   "pred": 4.21
+  },
+  {
+   "id": "AGC_161",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.46,
+   "pred": 4.67
+  },
+  {
+   "id": "AGC_069",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 5.46,
+   "pred": 4.49
+  },
+  {
+   "id": "AGC_165",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.44,
+   "pred": 4.46
+  },
+  {
+   "id": "AGC_021",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.94,
+   "pred": 4.61
+  },
+  {
+   "id": "AGC_193",
+   "estado": "Puebla",
+   "municipio": "Chignahuapan",
+   "obs": 4.57,
+   "pred": 4.25
+  },
+  {
+   "id": "AGC_098",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.09
+  },
+  {
+   "id": "AGC_187",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.08
+  },
+  {
+   "id": "AGC_040",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.06
+  },
+  {
+   "id": "AGC_099",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.1
+  },
+  {
+   "id": "AGC_048",
+   "estado": "Tlaxcala",
+   "municipio": "Nanacamilpa de Mariano Arista",
+   "obs": 2.5,
+   "pred": 3.15
+  },
+  {
+   "id": "AGC_112",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.04
+  },
+  {
+   "id": "AGC_138",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.13
+  },
+  {
+   "id": "AGC_122",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.0
+  },
+  {
+   "id": "AGC_023",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.15
+  },
+  {
+   "id": "AGC_004",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.04
+  },
+  {
+   "id": "AGC_144",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.09
+  },
+  {
+   "id": "AGC_053",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.07
+  },
+  {
+   "id": "AGC_117",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.09
+  },
+  {
+   "id": "AGC_054",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.03
+  },
+  {
+   "id": "AGC_145",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.03
+  },
+  {
+   "id": "AGC_123",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.09
+  },
+  {
+   "id": "AGC_170",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.05
+  },
+  {
+   "id": "AGC_164",
+   "estado": "Hidalgo",
+   "municipio": "Apan",
+   "obs": 3.0,
+   "pred": 3.2
+  },
+  {
+   "id": "AGC_169",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.11
+  },
+  {
+   "id": "AGC_163",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.07
+  },
+  {
+   "id": "AGC_157",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.04
+  },
+  {
+   "id": "AGC_141",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 2.95
+  },
+  {
+   "id": "AGC_066",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.06
+  },
+  {
+   "id": "AGC_068",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.11
+  },
+  {
+   "id": "AGC_037",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.06
+  },
+  {
+   "id": "AGC_058",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.08
+  },
+  {
+   "id": "AGC_114",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.03
+  },
+  {
+   "id": "AGC_074",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 2.5,
+   "pred": 3.18
+  },
+  {
+   "id": "AGC_019",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.07
+  },
+  {
+   "id": "AGC_103",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.14
+  },
+  {
+   "id": "AGC_046",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.0,
+   "pred": 3.11
+  },
+  {
+   "id": "AGC_001",
+   "estado": "Tlaxcala",
+   "municipio": "Calpulalpan",
+   "obs": 3.5,
+   "pred": 3.02
+  }
+ ],
+ "residuales": [
+  0.31,
+  0.41,
+  0.34,
+  0.17,
+  0.39,
+  -0.04,
+  0.04,
+  0.37,
+  0.84,
+  0.11,
+  0.22,
+  0.08,
+  0.4,
+  0.08,
+  0.04,
+  0.09,
+  0.28,
+  -0.22,
+  0.18,
+  -0.9,
+  -0.9,
+  0.3,
+  -1.5,
+  0.05,
+  0.17,
+  0.18,
+  -0.01,
+  -0.19,
+  0.15,
+  -0.06,
+  -0.25,
+  -0.15,
+  0.32,
+  0.35,
+  0.02,
+  -0.06,
+  -0.08,
+  0.33,
+  0.14,
+  0.69,
+  -0.17,
+  0.14,
+  -0.05,
+  -0.02,
+  0.4,
+  -0.01,
+  0.29,
+  -0.15,
+  -0.13,
+  0.1,
+  -0.14,
+  0.08,
+  0.19,
+  -0.17,
+  0.13,
+  0.22,
+  0.01,
+  0.29,
+  0.02,
+  -0.3,
+  1.21,
+  -0.03,
+  0.18,
+  -0.08,
+  -2.21,
+  0.12,
+  -1.97,
+  -0.13,
+  -0.51,
+  -1.31,
+  -0.36,
+  -0.71,
+  0.64,
+  -0.1,
+  1.09,
+  0.13,
+  0.45,
+  0.09,
+  0.22,
+  0.05,
+  -0.43,
+  -0.58,
+  0.49,
+  0.81,
+  -0.02,
+  0.42,
+  -0.69,
+  -0.53,
+  -0.41,
+  -0.91,
+  0.37,
+  0.58,
+  -0.92,
+  -0.25,
+  0.25,
+  0.05,
+  0.92,
+  0.23,
+  0.48,
+  0.22,
+  0.62,
+  -0.21,
+  0.97,
+  -0.02,
+  0.33,
+  0.32,
+  -0.09,
+  -0.08,
+  -0.06,
+  0.4,
+  -0.65,
+  -0.04,
+  -0.63,
+  0.5,
+  -0.15,
+  -0.04,
+  -0.59,
+  0.43,
+  0.41,
+  -0.53,
+  0.47,
+  -0.59,
+  -0.05,
+  -0.2,
+  -0.61,
+  -0.07,
+  -0.04,
+  0.55,
+  -0.06,
+  -0.61,
+  0.44,
+  -0.58,
+  -0.03,
+  -0.68,
+  -0.07,
+  -0.14,
+  -0.11,
+  0.48
+ ],
+ "importancia_familias": [
+  {
+   "familia": "Clima",
+   "valor": 0.381
+  },
+  {
+   "familia": "Ubicación",
+   "valor": 0.194
+  },
+  {
+   "familia": "NDVI",
+   "valor": 0.081
+  },
+  {
+   "familia": "NDDI",
+   "valor": 0.072
+  },
+  {
+   "familia": "LAI",
+   "valor": 0.05
+  },
+  {
+   "familia": "NDWI",
+   "valor": 0.05
+  },
+  {
+   "familia": "CRC",
+   "valor": 0.048
+  },
+  {
+   "familia": "NDTI",
+   "valor": 0.038
+  },
+  {
+   "familia": "MSI",
+   "valor": 0.037
+  },
+  {
+   "familia": "FAPAR",
+   "valor": 0.032
+  }
+ ],
+ "robustez_espacial": [
+  {
+   "municipio": "Almoloya",
+   "rmse": 0.28,
+   "n": 10
+  },
+  {
+   "municipio": "Cuautepec de Hinojosa",
+   "rmse": 0.32,
+   "n": 5
+  },
+  {
+   "municipio": "Calpulalpan",
+   "rmse": 0.44,
+   "n": 30
+  },
+  {
+   "municipio": "Chignahuapan",
+   "rmse": 0.61,
+   "n": 71
+  },
+  {
+   "municipio": "Singuilucan",
+   "rmse": 0.9,
+   "n": 16
+  }
+ ],
+ "hallazgos": {
+  "indices": [
+   {
+    "etiqueta": "NDVI",
+    "valor": 0.081
+   },
+   {
+    "etiqueta": "NDDI",
+    "valor": 0.072
+   },
+   {
+    "etiqueta": "LAI",
+    "valor": 0.05
+   }
+  ],
+  "dentro_ndvi": [
+   {
+    "etiqueta": "Velocidad de verdeo",
+    "valor": 0.007
+   },
+   {
+    "etiqueta": "Velocidad de senescencia",
+    "valor": 0.049
+   },
+   {
+    "etiqueta": "Valor máximo",
+    "valor": 0.002
+   },
+   {
+    "etiqueta": "Otras medidas",
+    "valor": 0.024
+   }
+  ],
+  "clima": [
+   {
+    "etiqueta": "Lluvia de mayo",
+    "valor": 0.268
+   },
+   {
+    "etiqueta": "Lluvia de abril",
+    "valor": 0.047
+   },
+   {
+    "etiqueta": "Temp. máxima de abril",
+    "valor": 0.026
+   },
+   {
+    "etiqueta": "Temp. mínima de abril",
+    "valor": 0.021
+   },
+   {
+    "etiqueta": "Lluvia de junio",
+    "valor": 0.009
+   },
+   {
+    "etiqueta": "Lluvia de septiembre",
+    "valor": 0.003
+   },
+   {
+    "etiqueta": "Resto del clima",
+    "valor": 0.007
+   }
+  ],
+  "bloques": [
+   {
+    "etiqueta": "Solo clima",
+    "clave": "solo_clima",
+    "rmse": 0.507,
+    "n_variables": 16
+   },
+   {
+    "etiqueta": "Todas las variables",
+    "clave": "todo",
+    "rmse": 0.508,
+    "n_variables": 121
+   },
+   {
+    "etiqueta": "Clima + satelital",
+    "clave": "clima_mas_satelital",
+    "rmse": 0.512,
+    "n_variables": 99
+   },
+   {
+    "etiqueta": "Topografía + ubicación",
+    "clave": "solo_topografia_ubicacion",
+    "rmse": 0.514,
+    "n_variables": 16
+   },
+   {
+    "etiqueta": "Clima + ubicación",
+    "clave": "clima_mas_ubicacion",
+    "rmse": 0.523,
+    "n_variables": 32
+   },
+   {
+    "etiqueta": "Solo satelital",
+    "clave": "solo_satelital",
+    "rmse": 0.613,
+    "n_variables": 83
+   }
+  ],
+  "familia_clima": 0.381
+ },
+ "n_parcelas": {
+  "total": 197,
+  "medidas": 138,
+  "ocultas": 59
+ },
+ "rango_entrenamiento": {
+  "lluvia_mayo": {
+   "min": 91.46477508544922,
+   "max": 230.69461059570312
+  },
+  "tmin_abril": {
+   "min": 9.055782318115234,
+   "max": 11.67517375946045
+  }
+ }
+}

@@ -1,0 +1,1380 @@
+{
+ "version_artefactos": 1,
+ "generado": "2026-10-13T19:00:33+00:00",
+ "modelo": {
+  "nombre": "mezcla",
+  "descripcion": "Promedio de las predicciones del ensamble y del modelo de ubicación."
+ },
+ "variables": [
+  "AREA_HA",
+  "lon",
+  "lat",
+  "elevacion_m",
+  "pendiente_grados",
+  "ndvi_pico",
+  "ndvi_doy_pico",
+  "ndvi_auc",
+  "ndvi_tasa_verdeo",
+  "ndvi_tasa_senescencia",
+  "evi_pico",
+  "evi_doy_pico",
+  "evi_auc",
+  "evi_tasa_verdeo",
+  "evi_tasa_senescencia",
+  "lai_pico",
+  "lai_auc",
+  "lai_tasa_verdeo",
+  "lai_tasa_senescencia",
+  "fapar_pico",
+  "fapar_doy_pico",
+  "fapar_auc",
+  "fapar_tasa_verdeo",
+  "fapar_tasa_senescencia",
+  "savi_doy_pico",
+  "savi_tasa_senescencia",
+  "msi_pico",
+  "msi_doy_pico",
+  "msi_auc",
+  "msi_tasa_verdeo",
+  "msi_tasa_senescencia",
+  "ndwi_pico",
+  "ndwi_doy_pico",
+  "ndwi_auc",
+  "ndwi_tasa_verdeo",
+  "ndwi_tasa_senescencia",
+  "dswi2_pico",
+  "dswi2_doy_pico",
+  "dswi2_auc",
+  "dswi2_tasa_verdeo",
+  "dswi2_tasa_senescencia",
+  "dswi5_pico",
+  "dswi5_doy_pico",
+  "dswi5_auc",
+  "dswi5_tasa_verdeo",
+  "dswi5_tasa_senescencia",
+  "nddi_pico",
+  "nddi_doy_pico",
+  "nddi_auc",
+  "nddi_tasa_verdeo",
+  "nddi_tasa_senescencia",
+  "ndti_pico",
+  "ndti_doy_pico",
+  "ndti_auc",
+  "ndti_tasa_verdeo",
+  "ndti_tasa_senescencia",
+  "crc_pico",
+  "crc_doy_pico",
+  "crc_auc",
+  "crc_tasa_verdeo",
+  "crc_tasa_senescencia",
+  "mcrc_doy_pico",
+  "mcrc_auc",
+  "mcrc_tasa_verdeo",
+  "mcrc_tasa_senescencia",
+  "ndsvi_pico",
+  "ndsvi_doy_pico",
+  "ndsvi_auc",
+  "ndsvi_tasa_verdeo",
+  "ndsvi_tasa_senescencia",
+  "ndvi_std_pico",
+  "ndvi_pico_pl",
+  "ndvi_doy_pico_pl",
+  "ndvi_auc_pl",
+  "ndvi_tasa_verdeo_pl",
+  "ndvi_tasa_senescencia_pl",
+  "evi_pico_pl",
+  "evi_doy_pico_pl",
+  "evi_auc_pl",
+  "evi_tasa_verdeo_pl",
+  "evi_tasa_senescencia_pl",
+  "lai_pico_pl",
+  "lai_doy_pico_pl",
+  "lai_auc_pl",
+  "lai_tasa_verdeo_pl",
+  "lai_tasa_senescencia_pl",
+  "msavi_doy_pico_pl",
+  "msavi_tasa_senescencia_pl",
+  "ndvi_std_pico_pl",
+  "prec_mm_m04",
+  "prec_mm_m05",
+  "prec_mm_m06",
+  "prec_mm_m07",
+  "prec_mm_m08",
+  "prec_mm_m09",
+  "prec_mm_m10",
+  "tmax_c_m04",
+  "tmax_c_m05",
+  "tmax_c_m06",
+  "tmax_c_m08",
+  "tmin_c_m04",
+  "tmin_c_m06",
+  "meses_secos",
+  "prec_ciclo_hist",
+  "prec_anomalia",
+  "ndvi_auc_2022",
+  "ndvi_auc_2023",
+  "ndvi_auc_2024",
+  "ndvi_auc_hist_media",
+  "est_Hidalgo",
+  "est_Puebla",
+  "est_Tlaxcala",
+  "mun_Almoloya",
+  "mun_Apan",
+  "mun_Calpulalpan",
+  "mun_Chignahuapan",
+  "mun_Cuautepec de Hinojosa",
+  "mun_Emiliano Zapata",
+  "mun_Nanacamilpa de Mariano Arista",
+  "mun_Singuilucan",
+  "mun_Tepeapulco"
+ ],
+ "variable_longitud": "lon",
+ "detalle_variables": {
+  "AREA_HA": {
+   "etiqueta": "Área de la parcela",
+   "unidad": "ha",
+   "divisor": 1.0
+  },
+  "lon": {
+   "etiqueta": "Longitud",
+   "unidad": "°",
+   "divisor": 1.0
+  },
+  "lat": {
+   "etiqueta": "Latitud",
+   "unidad": "°",
+   "divisor": 1.0
+  },
+  "elevacion_m": {
+   "etiqueta": "Elevación",
+   "unidad": "m",
+   "divisor": 1.0
+  },
+  "pendiente_grados": {
+   "etiqueta": "Pendiente del terreno",
+   "unidad": "°",
+   "divisor": 1.0
+  },
+  "ndvi_pico": {
+   "etiqueta": "NDVI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_doy_pico": {
+   "etiqueta": "Día del pico de NDVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_auc": {
+   "etiqueta": "Integral de NDVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo NDVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndvi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia NDVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "evi_pico": {
+   "etiqueta": "EVI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_doy_pico": {
+   "etiqueta": "Día del pico de EVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_auc": {
+   "etiqueta": "Integral de EVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo EVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "evi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia EVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "lai_pico": {
+   "etiqueta": "LAI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "lai_auc": {
+   "etiqueta": "Integral de LAI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "lai_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo LAI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "lai_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia LAI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "fapar_pico": {
+   "etiqueta": "FAPAR máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "fapar_doy_pico": {
+   "etiqueta": "Día del pico de FAPAR",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "fapar_auc": {
+   "etiqueta": "Integral de FAPAR",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "fapar_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo FAPAR",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "fapar_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia FAPAR",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "savi_doy_pico": {
+   "etiqueta": "Día del pico de SAVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "savi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia SAVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "msi_pico": {
+   "etiqueta": "MSI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "msi_doy_pico": {
+   "etiqueta": "Día del pico de MSI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "msi_auc": {
+   "etiqueta": "Integral de MSI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "msi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo MSI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "msi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia MSI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndwi_pico": {
+   "etiqueta": "NDWI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndwi_doy_pico": {
+   "etiqueta": "Día del pico de NDWI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndwi_auc": {
+   "etiqueta": "Integral de NDWI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndwi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo NDWI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndwi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia NDWI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "dswi2_pico": {
+   "etiqueta": "DSWI2 máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi2_doy_pico": {
+   "etiqueta": "Día del pico de DSWI2",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi2_auc": {
+   "etiqueta": "Integral de DSWI2",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi2_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo DSWI2",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "dswi2_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia DSWI2",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "dswi5_pico": {
+   "etiqueta": "DSWI5 máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi5_doy_pico": {
+   "etiqueta": "Día del pico de DSWI5",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi5_auc": {
+   "etiqueta": "Integral de DSWI5",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "dswi5_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo DSWI5",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "dswi5_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia DSWI5",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "nddi_pico": {
+   "etiqueta": "NDDI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "nddi_doy_pico": {
+   "etiqueta": "Día del pico de NDDI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "nddi_auc": {
+   "etiqueta": "Integral de NDDI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "nddi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo NDDI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "nddi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia NDDI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndti_pico": {
+   "etiqueta": "NDTI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndti_doy_pico": {
+   "etiqueta": "Día del pico de NDTI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndti_auc": {
+   "etiqueta": "Integral de NDTI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndti_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo NDTI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndti_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia NDTI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "crc_pico": {
+   "etiqueta": "CRC máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "crc_doy_pico": {
+   "etiqueta": "Día del pico de CRC",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "crc_auc": {
+   "etiqueta": "Integral de CRC",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "crc_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo CRC",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "crc_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia CRC",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "mcrc_doy_pico": {
+   "etiqueta": "Día del pico de MCRC",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "mcrc_auc": {
+   "etiqueta": "Integral de MCRC",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "mcrc_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo MCRC",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "mcrc_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia MCRC",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndsvi_pico": {
+   "etiqueta": "NDSVI máximo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndsvi_doy_pico": {
+   "etiqueta": "Día del pico de NDSVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndsvi_auc": {
+   "etiqueta": "Integral de NDSVI",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndsvi_tasa_verdeo": {
+   "etiqueta": "Velocidad de verdeo NDSVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndsvi_tasa_senescencia": {
+   "etiqueta": "Velocidad de senescencia NDSVI",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndvi_std_pico": {
+   "etiqueta": "Variación interna del NDVI en el pico",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_pico_pl": {
+   "etiqueta": "NDVI máximo (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_doy_pico_pl": {
+   "etiqueta": "Día del pico de NDVI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_auc_pl": {
+   "etiqueta": "Integral de NDVI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_tasa_verdeo_pl": {
+   "etiqueta": "Velocidad de verdeo NDVI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndvi_tasa_senescencia_pl": {
+   "etiqueta": "Velocidad de senescencia NDVI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "evi_pico_pl": {
+   "etiqueta": "EVI máximo (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_doy_pico_pl": {
+   "etiqueta": "Día del pico de EVI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_auc_pl": {
+   "etiqueta": "Integral de EVI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "evi_tasa_verdeo_pl": {
+   "etiqueta": "Velocidad de verdeo EVI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "evi_tasa_senescencia_pl": {
+   "etiqueta": "Velocidad de senescencia EVI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "lai_pico_pl": {
+   "etiqueta": "LAI máximo (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "lai_doy_pico_pl": {
+   "etiqueta": "Día del pico de LAI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "lai_auc_pl": {
+   "etiqueta": "Integral de LAI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "lai_tasa_verdeo_pl": {
+   "etiqueta": "Velocidad de verdeo LAI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "lai_tasa_senescencia_pl": {
+   "etiqueta": "Velocidad de senescencia LAI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "msavi_doy_pico_pl": {
+   "etiqueta": "Día del pico de MSAVI (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "msavi_tasa_senescencia_pl": {
+   "etiqueta": "Velocidad de senescencia MSAVI (Planet)",
+   "unidad": "por día",
+   "divisor": 100.0
+  },
+  "ndvi_std_pico_pl": {
+   "etiqueta": "Variación interna del NDVI en el pico (Planet)",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "prec_mm_m04": {
+   "etiqueta": "Lluvia de abril",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m05": {
+   "etiqueta": "Lluvia de mayo",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m06": {
+   "etiqueta": "Lluvia de junio",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m07": {
+   "etiqueta": "Lluvia de julio",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m08": {
+   "etiqueta": "Lluvia de agosto",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m09": {
+   "etiqueta": "Lluvia de septiembre",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_mm_m10": {
+   "etiqueta": "Lluvia de octubre",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "tmax_c_m04": {
+   "etiqueta": "Temperatura máxima de abril",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "tmax_c_m05": {
+   "etiqueta": "Temperatura máxima de mayo",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "tmax_c_m06": {
+   "etiqueta": "Temperatura máxima de junio",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "tmax_c_m08": {
+   "etiqueta": "Temperatura máxima de agosto",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "tmin_c_m04": {
+   "etiqueta": "Temperatura mínima de abril",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "tmin_c_m06": {
+   "etiqueta": "Temperatura mínima de junio",
+   "unidad": "°C",
+   "divisor": 1.0
+  },
+  "meses_secos": {
+   "etiqueta": "Meses secos del ciclo",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "prec_ciclo_hist": {
+   "etiqueta": "Lluvia media de ciclos anteriores",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "prec_anomalia": {
+   "etiqueta": "Anomalía de lluvia del ciclo",
+   "unidad": "mm",
+   "divisor": 1.0
+  },
+  "ndvi_auc_2022": {
+   "etiqueta": "NDVI acumulado 2022",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_auc_2023": {
+   "etiqueta": "NDVI acumulado 2023",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_auc_2024": {
+   "etiqueta": "NDVI acumulado 2024",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "ndvi_auc_hist_media": {
+   "etiqueta": "NDVI acumulado, promedio histórico",
+   "unidad": "",
+   "divisor": 1.0
+  },
+  "est_Hidalgo": {
+   "etiqueta": "Estado Hidalgo",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "est_Puebla": {
+   "etiqueta": "Estado Puebla",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "est_Tlaxcala": {
+   "etiqueta": "Estado Tlaxcala",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Almoloya": {
+   "etiqueta": "Municipio Almoloya",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Apan": {
+   "etiqueta": "Municipio Apan",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Calpulalpan": {
+   "etiqueta": "Municipio Calpulalpan",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Chignahuapan": {
+   "etiqueta": "Municipio Chignahuapan",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Cuautepec de Hinojosa": {
+   "etiqueta": "Municipio Cuautepec de Hinojosa",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Emiliano Zapata": {
+   "etiqueta": "Municipio Emiliano Zapata",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Nanacamilpa de Mariano Arista": {
+   "etiqueta": "Municipio Nanacamilpa de Mariano Arista",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Singuilucan": {
+   "etiqueta": "Municipio Singuilucan",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  },
+  "mun_Tepeapulco": {
+   "etiqueta": "Municipio Tepeapulco",
+   "unidad": "sí/no",
+   "divisor": 1.0
+  }
+ },
+ "pesos_mezcla": {
+  "lgbm": 0.16666666666666666,
+  "rf": 0.16666666666666666,
+  "enet": 0.16666666666666666,
+  "lgbm_longitud": 0.5
+ },
+ "cuantil_intervalo": 0.748793685294861,
+ "nivel_intervalo": 0.9,
+ "base": 3.9553623188405798,
+ "metricas": {
+  "estratificada": {
+   "esquema": "Validación cruzada anidada estratificada por municipio",
+   "rmse": 0.508,
+   "mae": 0.354,
+   "r2": 0.64,
+   "sesgo": 0.005,
+   "baseline": {
+    "nombre": "Predecir el promedio",
+    "rmse": 0.846,
+    "r2": 0
+   }
+  },
+  "lomo": {
+   "esquema": "Un municipio completo fuera en cada ronda (LOMO)",
+   "rmse": 0.595,
+   "mae": 0.473,
+   "r2": 0.51,
+   "sesgo": -0.013,
+   "baseline": {
+    "nombre": "Promedio de las demás zonas",
+    "rmse": 1.153,
+    "r2": -0.85
+   }
+  }
+ },
+ "rangos_entrenamiento": {
+  "AREA_HA": {
+   "min": 0.38,
+   "max": 64.3
+  },
+  "lon": {
+   "min": -98.60978067453738,
+   "max": -98.2002462929748
+  },
+  "lat": {
+   "min": 19.525736503611505,
+   "max": 19.980592727373345
+  },
+  "elevacion_m": {
+   "min": 2497.199951171875,
+   "max": 2903.384521484375
+  },
+  "pendiente_grados": {
+   "min": 0.2826486229896545,
+   "max": 8.930869102478027
+  },
+  "ndvi_pico": {
+   "min": 0.4776177469915898,
+   "max": 0.8090586708542973
+  },
+  "ndvi_doy_pico": {
+   "min": 184.0,
+   "max": 291.0
+  },
+  "ndvi_auc": {
+   "min": 0.5923446317119822,
+   "max": 1.0181920551791188
+  },
+  "ndvi_tasa_verdeo": {
+   "min": 0.1748161064499824,
+   "max": 0.6075712196157272
+  },
+  "ndvi_tasa_senescencia": {
+   "min": -0.8040828727328346,
+   "max": -0.0642747667837251
+  },
+  "evi_pico": {
+   "min": 0.3424080291232561,
+   "max": 0.9049810207023128
+  },
+  "evi_doy_pico": {
+   "min": 183.0,
+   "max": 290.0
+  },
+  "evi_auc": {
+   "min": 0.4490852863450812,
+   "max": 0.8641674173323587
+  },
+  "evi_tasa_verdeo": {
+   "min": 0.1332568289623974,
+   "max": 0.6709782952474357
+  },
+  "evi_tasa_senescencia": {
+   "min": -0.9971986525176584,
+   "max": -0.0508608373458187
+  },
+  "lai_pico": {
+   "min": 0.4094764081302311,
+   "max": 2.8973890696534434
+  },
+  "lai_auc": {
+   "min": 0.3031554688711255,
+   "max": 1.5292237783058074
+  },
+  "lai_tasa_verdeo": {
+   "min": 0.2339808120133398,
+   "max": 2.0897218159252966
+  },
+  "lai_tasa_senescencia": {
+   "min": -3.705136062582112,
+   "max": -0.1123576291429421
+  },
+  "fapar_pico": {
+   "min": 0.4454677082279815,
+   "max": 0.8640265991723514
+  },
+  "fapar_doy_pico": {
+   "min": 187.0,
+   "max": 295.0
+  },
+  "fapar_auc": {
+   "min": 0.4743721394478544,
+   "max": 0.91203721117737
+  },
+  "fapar_tasa_verdeo": {
+   "min": 0.1644547591822283,
+   "max": 0.6393450354490172
+  },
+  "fapar_tasa_senescencia": {
+   "min": -0.9950884460366862,
+   "max": -0.1321041613861875
+  },
+  "savi_doy_pico": {
+   "min": 184.0,
+   "max": 298.0
+  },
+  "savi_tasa_senescencia": {
+   "min": -0.599284663538845,
+   "max": -0.0304245826149237
+  },
+  "msi_pico": {
+   "min": 1.0850018344803407,
+   "max": 2.0221354299389174
+  },
+  "msi_doy_pico": {
+   "min": 91.0,
+   "max": 151.0
+  },
+  "msi_auc": {
+   "min": 1.6632742050425806,
+   "max": 2.4481423958943407
+  },
+  "msi_tasa_verdeo": {
+   "min": 0.0,
+   "max": 1.5377275910756982
+  },
+  "msi_tasa_senescencia": {
+   "min": -0.6760782463118151,
+   "max": -0.0611574819291931
+  },
+  "ndwi_pico": {
+   "min": 0.167758924057027,
+   "max": 0.5091659756631766
+  },
+  "ndwi_doy_pico": {
+   "min": 176.0,
+   "max": 290.0
+  },
+  "ndwi_auc": {
+   "min": -0.1008946621498599,
+   "max": 0.3522084060066616
+  },
+  "ndwi_tasa_verdeo": {
+   "min": 0.1538463311175041,
+   "max": 0.566840601262226
+  },
+  "ndwi_tasa_senescencia": {
+   "min": -1.2510213324895147,
+   "max": -0.0827885333655156
+  },
+  "dswi2_pico": {
+   "min": 2.0288450129773103,
+   "max": 3.580772636262386
+  },
+  "dswi2_doy_pico": {
+   "min": 91.0,
+   "max": 304.0
+  },
+  "dswi2_auc": {
+   "min": 3.6771785402129007,
+   "max": 5.055536296002112
+  },
+  "dswi2_tasa_verdeo": {
+   "min": 0.0,
+   "max": 5.310799579030764
+  },
+  "dswi2_tasa_senescencia": {
+   "min": -1.3408611649919688,
+   "max": 0.0
+  },
+  "dswi5_pico": {
+   "min": 1.3478509454949463,
+   "max": 2.8005833181648647
+  },
+  "dswi5_doy_pico": {
+   "min": 183.0,
+   "max": 290.0
+  },
+  "dswi5_auc": {
+   "min": 2.049618020999691,
+   "max": 3.217203975561957
+  },
+  "dswi5_tasa_verdeo": {
+   "min": 0.3132598401976624,
+   "max": 1.3132102844617386
+  },
+  "dswi5_tasa_senescencia": {
+   "min": -3.7958519946403744,
+   "max": -0.2131540149421947
+  },
+  "nddi_pico": {
+   "min": 0.0678509960562216,
+   "max": 0.2396615903192013
+  },
+  "nddi_doy_pico": {
+   "min": 91.0,
+   "max": 214.0
+  },
+  "nddi_auc": {
+   "min": 0.0498344149054487,
+   "max": 0.2201370650048797
+  },
+  "nddi_tasa_verdeo": {
+   "min": 0.0,
+   "max": 0.6403876922730977
+  },
+  "nddi_tasa_senescencia": {
+   "min": -0.1286363508235718,
+   "max": -0.0056530843330989
+  },
+  "ndti_pico": {
+   "min": 0.2501756328580489,
+   "max": 0.4014556478876168
+  },
+  "ndti_doy_pico": {
+   "min": 187.0,
+   "max": 284.0
+  },
+  "ndti_auc": {
+   "min": 0.2935537153739741,
+   "max": 0.5363422949404871
+  },
+  "ndti_tasa_verdeo": {
+   "min": 0.0847144165097416,
+   "max": 0.3013439490848311
+  },
+  "ndti_tasa_senescencia": {
+   "min": -0.444786900022331,
+   "max": -0.0524710114151117
+  },
+  "crc_pico": {
+   "min": 0.3787724239053359,
+   "max": 0.5480142953449765
+  },
+  "crc_doy_pico": {
+   "min": 98.0,
+   "max": 304.0
+  },
+  "crc_auc": {
+   "min": 0.4947596908012093,
+   "max": 0.8567024315906258
+  },
+  "crc_tasa_verdeo": {
+   "min": 0.004590188001416,
+   "max": 1.9380395351362405
+  },
+  "crc_tasa_senescencia": {
+   "min": -0.918818031666622,
+   "max": 0.0
+  },
+  "mcrc_doy_pico": {
+   "min": 91.0,
+   "max": 304.0
+  },
+  "mcrc_auc": {
+   "min": 0.4636274311692961,
+   "max": 0.8393652125593795
+  },
+  "mcrc_tasa_verdeo": {
+   "min": 0.0,
+   "max": 1.4992574240738343
+  },
+  "mcrc_tasa_senescencia": {
+   "min": -0.7815832712808871,
+   "max": 0.0
+  },
+  "ndsvi_pico": {
+   "min": 0.3582108908888536,
+   "max": 0.5796317625644449
+  },
+  "ndsvi_doy_pico": {
+   "min": 183.0,
+   "max": 304.0
+  },
+  "ndsvi_auc": {
+   "min": 0.495672399012353,
+   "max": 0.9785504969325838
+  },
+  "ndsvi_tasa_verdeo": {
+   "min": 0.0430711618843957,
+   "max": 0.2946882914474862
+  },
+  "ndsvi_tasa_senescencia": {
+   "min": -0.5972117347938755,
+   "max": 0.0
+  },
+  "ndvi_std_pico": {
+   "min": 0.0426923076923076,
+   "max": 0.1738571428571428
+  },
+  "ndvi_pico_pl": {
+   "min": 0.5368179290120145,
+   "max": 0.883244868035159
+  },
+  "ndvi_doy_pico_pl": {
+   "min": 184.0,
+   "max": 297.0
+  },
+  "ndvi_auc_pl": {
+   "min": 0.7842008298782881,
+   "max": 1.2288535385276131
+  },
+  "ndvi_tasa_verdeo_pl": {
+   "min": 0.1501482877854581,
+   "max": 0.5691762977653909
+  },
+  "ndvi_tasa_senescencia_pl": {
+   "min": -0.8647816298547988,
+   "max": -0.0562850750677128
+  },
+  "evi_pico_pl": {
+   "min": 0.3341410152694795,
+   "max": 0.7806046617453459
+  },
+  "evi_doy_pico_pl": {
+   "min": 185.0,
+   "max": 278.0
+  },
+  "evi_auc_pl": {
+   "min": 0.4638377914854724,
+   "max": 0.8185809008325456
+  },
+  "evi_tasa_verdeo_pl": {
+   "min": 0.1170544781175048,
+   "max": 0.5515514291974052
+  },
+  "evi_tasa_senescencia_pl": {
+   "min": -0.9568115615495408,
+   "max": -0.0779719754135743
+  },
+  "lai_pico_pl": {
+   "min": 1.735377515421113,
+   "max": 3.492183495129144
+  },
+  "lai_doy_pico_pl": {
+   "min": 184.0,
+   "max": 287.0
+  },
+  "lai_auc_pl": {
+   "min": 2.575567580139457,
+   "max": 4.215861952168926
+  },
+  "lai_tasa_verdeo_pl": {
+   "min": 0.5222056208090411,
+   "max": 1.9606807745461103
+  },
+  "lai_tasa_senescencia_pl": {
+   "min": -3.458911944977185,
+   "max": -0.2386298623788296
+  },
+  "msavi_doy_pico_pl": {
+   "min": 185.0,
+   "max": 301.0
+  },
+  "msavi_tasa_senescencia_pl": {
+   "min": -0.8621023187893792,
+   "max": -0.0460353945893417
+  },
+  "ndvi_std_pico_pl": {
+   "min": 0.0359677419354838,
+   "max": 0.17271875
+  },
+  "prec_mm_m04": {
+   "min": 8.286457061767578,
+   "max": 23.792781829833984
+  },
+  "prec_mm_m05": {
+   "min": 91.46477508544922,
+   "max": 230.69461059570312
+  },
+  "prec_mm_m06": {
+   "min": 195.0574951171875,
+   "max": 366.0626525878906
+  },
+  "prec_mm_m07": {
+   "min": 101.9616470336914,
+   "max": 244.2140655517578
+  },
+  "prec_mm_m08": {
+   "min": 93.28024291992188,
+   "max": 199.5167388916016
+  },
+  "prec_mm_m09": {
+   "min": 110.7126007080078,
+   "max": 333.6866760253906
+  },
+  "prec_mm_m10": {
+   "min": 70.0643310546875,
+   "max": 167.59825134277344
+  },
+  "tmax_c_m04": {
+   "min": 25.734270095825195,
+   "max": 26.218185424804688
+  },
+  "tmax_c_m05": {
+   "min": 25.47101593017578,
+   "max": 26.599937438964844
+  },
+  "tmax_c_m06": {
+   "min": 22.15626335144043,
+   "max": 22.95329475402832
+  },
+  "tmax_c_m08": {
+   "min": 22.79991340637207,
+   "max": 23.946495056152344
+  },
+  "tmin_c_m04": {
+   "min": 9.055782318115234,
+   "max": 11.67517375946045
+  },
+  "tmin_c_m06": {
+   "min": 13.426764488220217,
+   "max": 15.209744453430176
+  },
+  "meses_secos": {
+   "min": 1.0,
+   "max": 1.0
+  },
+  "prec_ciclo_hist": {
+   "min": 465.50122833251953,
+   "max": 1008.0382639567056
+  },
+  "prec_anomalia": {
+   "min": 202.028904914856,
+   "max": 574.4595165252686
+  },
+  "ndvi_auc_2022": {
+   "min": 0.7648333333333334,
+   "max": 3.190166666666667
+  },
+  "ndvi_auc_2023": {
+   "min": 1.1878333333333333,
+   "max": 2.6085333333333334
+  },
+  "ndvi_auc_2024": {
+   "min": 1.7569833333333331,
+   "max": 2.936166666666667
+  },
+  "ndvi_auc_hist_media": {
+   "min": 1.5283722222222222,
+   "max": 2.820233333333333
+  },
+  "est_Hidalgo": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "est_Puebla": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "est_Tlaxcala": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Almoloya": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Apan": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Calpulalpan": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Chignahuapan": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Cuautepec de Hinojosa": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Emiliano Zapata": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Nanacamilpa de Mariano Arista": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Singuilucan": {
+   "min": 0.0,
+   "max": 1.0
+  },
+  "mun_Tepeapulco": {
+   "min": 0.0,
+   "max": 1.0
+  }
+ },
+ "municipios_entrenamiento": {
+  "Almoloya": {
+   "estado": "Hidalgo",
+   "n": 10,
+   "lat": 19.777693173522007,
+   "lon": -98.2982145774192,
+   "lat_min": 19.749212190360797,
+   "lat_max": 19.807116522002588,
+   "lon_min": -98.35444816477852,
+   "lon_max": -98.26524834098886
+  },
+  "Apan": {
+   "estado": "Hidalgo",
+   "n": 1,
+   "lat": 19.61004938606008,
+   "lon": -98.52221961894124,
+   "lat_min": 19.61004938606008,
+   "lat_max": 19.61004938606008,
+   "lon_min": -98.52221961894124,
+   "lon_max": -98.52221961894124
+  },
+  "Cuautepec de Hinojosa": {
+   "estado": "Hidalgo",
+   "n": 5,
+   "lat": 19.908379991252655,
+   "lon": -98.29690505039278,
+   "lat_min": 19.869873825815088,
+   "lat_max": 19.92940370913024,
+   "lon_min": -98.36256970142122,
+   "lon_max": -98.27570354019552
+  },
+  "Emiliano Zapata": {
+   "estado": "Hidalgo",
+   "n": 3,
+   "lat": 19.637905192895147,
+   "lon": -98.58381353811734,
+   "lat_min": 19.627921889854523,
+   "lat_max": 19.656256753259097,
+   "lon_min": -98.58625198451702,
+   "lon_max": -98.57907447362028
+  },
+  "Singuilucan": {
+   "estado": "Hidalgo",
+   "n": 16,
+   "lat": 19.956294011014975,
+   "lon": -98.40224199107632,
+   "lat_min": 19.94519970391538,
+   "lat_max": 19.980592727373345,
+   "lon_min": -98.42990802623171,
+   "lon_max": -98.37143217893887
+  },
+  "Tepeapulco": {
+   "estado": "Hidalgo",
+   "n": 1,
+   "lat": 19.83838458709084,
+   "lon": -98.39376415821884,
+   "lat_min": 19.83838458709084,
+   "lat_max": 19.83838458709084,
+   "lon_min": -98.39376415821884,
+   "lon_max": -98.39376415821884
+  },
+  "Chignahuapan": {
+   "estado": "Puebla",
+   "n": 71,
+   "lat": 19.868911679068006,
+   "lon": -98.25126898507895,
+   "lat_min": 19.84054089584934,
+   "lat_max": 19.89974242958389,
+   "lon_min": -98.29548466437836,
+   "lon_max": -98.2002462929748
+  },
+  "Calpulalpan": {
+   "estado": "Tlaxcala",
+   "n": 30,
+   "lat": 19.56958601377992,
+   "lon": -98.55320916481735,
+   "lat_min": 19.525736503611505,
+   "lat_max": 19.609178662168915,
+   "lon_min": -98.60978067453738,
+   "lon_max": -98.521185177377
+  },
+  "Nanacamilpa de Mariano Arista": {
+   "estado": "Tlaxcala",
+   "n": 1,
+   "lat": 19.551409906926803,
+   "lon": -98.51738999002175,
+   "lat_min": 19.551409906926803,
+   "lat_max": 19.551409906926803,
+   "lon_min": -98.51738999002175,
+   "lon_max": -98.51738999002175
+  }
+ },
+ "zona": {
+  "lat_min": 19.525736503611505,
+  "lat_max": 19.980592727373345,
+  "lon_min": -98.60978067453738,
+  "lon_max": -98.2002462929748,
+  "vecino_mediana_km": 0.33444875939286006,
+  "vecino_p95_km": 1.2703766410024397
+ },
+ "librerias": {
+  "python": "3.13.16",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "lightgbm": "4.7.0",
+  "joblib": "1.6.0",
+  "scikit-learn": "1.9.1"
+ },
+ "checksums": {
+  "modelo/imputador.joblib": "20485f59a271dc7727e6aed1a37358410df6ea2e2679a37572639c54fff51639",
+  "modelo/escalador.joblib": "765217907b995745ef75a3fccd2daf314ba3e6ee6944f29244e5992e537f5551",
+  "modelo/lgbm.joblib": "0e5adc04820ec5248e68aba0b2e9abd7c3287973cd86827e32b19d9212b4df4d",
+  "modelo/rf.joblib": "dbbd8e49f203b758a2f0b5803a16e06baeb4394ab36ab4d09f726267910987be",
+  "modelo/enet.joblib": "aa244629b29800d3d074be3aa4270d4ab84da870b0c9b7a7daac7dc2db96697f",
+  "modelo/lgbm_longitud.joblib": "7ea66530c2a686362cb4758bbcf8d034bf6feeb2d27f45393a06b65e2c528c38"
+ },
+ "tablas": {
+  "parcelas": 197,
+  "observaciones_satelitales": 98765
+ }
+}

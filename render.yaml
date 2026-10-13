@@ -1,0 +1,20 @@
+# Despliegue en Render (Blueprint). El backend es ligero: sin base de datos ni pipeline.
+services:
+  - type: web
+    name: cebadata-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn cebadata.wsgi:application --preload --workers 1 --bind 0.0.0.0:$PORT
+    healthCheckPath: /api/salud
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+      - key: DJANGO_DEBUG
+        value: "0"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: cebadata-api.onrender.com
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://TU-FRONT.onrender.com

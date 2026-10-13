@@ -251,7 +251,7 @@ def recomendar(estratificada: dict[str, dict], lomo: dict[str, dict],
     - Donde se califica (CV estratificada) cuenta quien quede a menos de `umbral`
       del mejor RMSE como empatado.
     - Entre los empatados se prefiere el que mejor aguante zonas nuevas (LOMO).
-    Es solo una sugerencia; el modelo congelado lo fija CEBADATA_MODELO_FINAL.
+    Es una justificacion para el reporte; el modelo que se sirve es siempre la mezcla.
     """
     cand = conf.CANDIDATOS
     mejor_est = min(estratificada[c]["rmse"] for c in cand)
