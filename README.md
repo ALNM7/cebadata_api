@@ -86,12 +86,31 @@ Incluyen la **prueba de paridad**: con los artefactos cargados la API reproduce 
 | GET | `/api/parcelas/<id>` | `{ parcela, serie, clima, shap, shap_otras, base, vecinos }` |
 | GET | `/api/modelo/metricas` | métricas de la mezcla (estratificada y LOMO), dispersión, importancias, robustez, hallazgos y la tabla de comparación para la metodología |
 | POST | `/api/simulador` | recibe `{ id, delta_lluvia_mayo_pct, delta_tmin_abril_c }` |
+| GET | `/api/nueva-parcela/opciones` | municipios conocidos, meses de clima que usa el modelo y rangos para el formulario |
+| POST | `/api/predecir` | estimación para una parcela nueva: `{ lat, lon, municipio, area_ha, clima? }` |
 
 Las predicciones salen de `artefactos/tablas/predicciones.csv`, no se recalculan. En las parcelas medidas es la predicción fuera de muestra (validación cruzada); en las 59 ocultas, la del modelo final. El intervalo es la predicción más/menos el cuantil 90 del error absoluto de CV de la mezcla (0.749 t/ha).
 
 ### Simulador
 
 Sobre una parcela existente cambia la lluvia de mayo (de -40 % a +40 %) y la temperatura mínima de abril (de -2 a +2 °C), recalcula las variables del ciclo que dependen de esos meses (meses secos y anomalía de lluvia) y predice con la mezcla. La respuesta trae la base, el escenario con su intervalo (que se ensancha con el tamaño del cambio), la diferencia y `fuera_de_rango` con las variables que salieron del rango de entrenamiento. La predicción del escenario es la predicción mostrada más el cambio que calcula el modelo, así la base coincide siempre con el mapa y la ficha.
+
+### Parcela nueva (`POST /api/predecir`)
+
+```json
+{ "lat": 19.98, "lon": -98.37, "municipio": "Singuilucan", "area_ha": 4.5,
+  "clima": { "prec_mm": { "5": 140, "6": 160 }, "tmin_c": { "4": 11 } } }
+```
+
+`clima` es opcional y puede ir incompleto (meses 4 a 10). El municipio se acepta sin acentos ni mayúsculas. El modelo usa 121 variables y casi todas (curvas satelitales, topografía, historia del NDVI) no se pueden conocer sin imágenes de esa parcela, así que lo que no se da se imputa:
+
+1. Se toman las 3 parcelas conocidas más cercanas (de las 197), con preferencia por el mismo municipio si tiene al menos 3.
+2. Cada variable faltante es el promedio de esos vecinos ponderado por 1/distancia² (piso de 0.5 km), no de uno solo, para no heredar el ruido de un vecino. Si el más cercano está a más de 10 km, se usa la mediana del municipio (o la de entrenamiento si el municipio no se conoce).
+3. Lo que el usuario da (lat, lon, área, municipio, clima) siempre manda. Si da lluvia mensual, se recalculan los meses secos y la anomalía de lluvia.
+
+La respuesta trae la predicción con su intervalo, el método de imputación, los vecinos usados con sus pesos, el conteo de variables proporcionadas, calculadas e imputadas, la lista completa de variables imputadas con su valor, su grupo y su origen, y `avisos`: estimación de zona (siempre), municipio desconocido, ubicación lejos de las parcelas (más de 5 km) o fuera de las zonas de entrenamiento (fuera de la caja de las parcelas más 5 km, o a más de 15 km de la parcela más cercana), municipio que no coincide con la ubicación y clima fuera del rango de entrenamiento.
+
+El intervalo es el de las demás parcelas (`cuantil_intervalo`) combinado con la dispersión de las predicciones de los vecinos y ensanchado hasta 2 veces según la distancia al vecino más cercano. Es una regla práctica, no un intervalo calibrado, y la respuesta lo dice. Es una estimación de zona: el modelo no ve nada propio de la parcela.
 
 ## Regenerar los artefactos
 

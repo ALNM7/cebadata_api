@@ -5,11 +5,13 @@
   GET  /api/parcelas/<id>
   GET  /api/modelo/metricas
   POST /api/simulador
+  GET  /api/nueva-parcela/opciones
+  POST /api/predecir
 """
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from api import artefactos, simulador
+from api import artefactos, nueva_parcela, simulador
 
 
 def _error(mensaje, status):
@@ -78,3 +80,17 @@ def simular(request):
     if id_poligono not in art.parcelas:
         return _error("Parcela no encontrada", 404)
     return Response(simulador.simular(art, id_poligono, dl, dt))
+
+
+@api_view(["GET"])
+def opciones_nueva_parcela(request):
+    return Response(nueva_parcela.opciones(artefactos.obtener()))
+
+
+@api_view(["POST"])
+def predecir(request):
+    """Estimacion para una parcela nueva: lat, lon, municipio, area_ha y clima opcional."""
+    try:
+        return Response(nueva_parcela.predecir(artefactos.obtener(), request.data))
+    except nueva_parcela.ErrorEntrada as e:
+        return _error(str(e), 400)
