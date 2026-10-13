@@ -1,0 +1,7 @@
+bloque,n_variables,rmse,rmse_std
+solo_clima,16,0.5067,0.0989
+todo,121,0.5083,0.1014
+clima_mas_satelital,99,0.5116,0.1042
+solo_topografia_ubicacion,16,0.5141,0.0852
+clima_mas_ubicacion,32,0.5227,0.0895
+solo_satelital,83,0.6134,0.1081

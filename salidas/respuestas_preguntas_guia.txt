@@ -1,0 +1,52 @@
+Respuestas a las preguntas guia del Reto AgroCebada (generadas por paso08)
+================================================================================
+
+1. Que indice satelital es mas importante en la prediccion?
+   Sumando la contribucion SHAP de todas las variables derivadas de cada
+   indice, el mas influyente es NDVI
+   (suma |SHAP| = 0.081 t/ha), seguido de
+   NDDI (0.072) y
+   LAI (0.050).
+   Nota del EDA: el valor pico de los indices casi no discrimina; lo que
+   aporta son sus dinamicas (tasas de verdeo y senescencia, integral).
+
+2. Que variable climatica tiene mayor peso?
+   Las variables climaticas individuales con mayor |SHAP| son:
+     - prec_mm_m05: 0.268 t/ha
+     - prec_mm_m04: 0.047 t/ha
+     - tmax_c_m04: 0.026 t/ha
+     - tmin_c_m04: 0.021 t/ha
+     - prec_mm_m06: 0.009 t/ha
+
+3. Que combinacion de variables funciona mejor?
+   Ablacion por bloques (RMSE con la misma CV estratificada, mismo modelo):
+     - solo_clima: RMSE 0.507 (16 variables)
+     - todo: RMSE 0.508 (121 variables)
+     - clima_mas_satelital: RMSE 0.512 (99 variables)
+     - solo_topografia_ubicacion: RMSE 0.514 (16 variables)
+     - clima_mas_ubicacion: RMSE 0.523 (32 variables)
+     - solo_satelital: RMSE 0.613 (83 variables)
+   El mejor bloque es "solo_clima" con RMSE 0.507.
+
+Robustez espacial (dejar un municipio completo fuera):
+     - sin Almoloya: RMSE 0.449 (n=10)
+     - sin Calpulalpan: RMSE 0.469 (n=30)
+     - sin Chignahuapan: RMSE 0.680 (n=71)
+     - sin Cuautepec de Hinojosa: RMSE 0.385 (n=5)
+     - sin Singuilucan: RMSE 0.966 (n=16)
+   Como se anticipo, el desempeno se degrada al extrapolar a municipios no
+   vistos porque parte de la senal es regional. El conjunto de PREDICCION
+   del reto esta en los mismos municipios que el de entrenamiento, asi que
+   la CV estratificada es la estimacion representativa; esta tabla se
+   reporta como analisis de limites del modelo.
+
+Comparacion de candidatos (paso 07, validacion anidada, mismas parcelas):
+     - ensamble   estratificada RMSE 0.508  MAE 0.362  R2 0.64  sesgo +0.000
+     - ensamble   lomo          RMSE 0.722  MAE 0.600  R2 0.28  sesgo -0.102
+     - ubicacion  estratificada RMSE 0.525  MAE 0.364  R2 0.62  sesgo +0.011
+     - ubicacion  lomo          RMSE 0.539  MAE 0.378  R2 0.60  sesgo +0.077
+     - mezcla     estratificada RMSE 0.508  MAE 0.354  R2 0.64  sesgo +0.005
+     - mezcla     lomo          RMSE 0.595  MAE 0.473  R2 0.51  sesgo -0.013
+   La estratificada mide lo que se califica (las 59 ocultas estan en los mismos
+   municipios). LOMO mide el desempeno en una zona nueva de la region. Diferencias
+   menores a 0.010 t/ha estan dentro del ruido de la validacion.

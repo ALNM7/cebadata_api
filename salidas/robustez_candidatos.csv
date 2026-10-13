@@ -1,0 +1,64 @@
+municipio_fuera,n_parcelas,modelo,rmse
+Almoloya,10,lgbm,0.3046
+Almoloya,10,rf,0.2342
+Almoloya,10,enet,0.3688
+Almoloya,10,ensamble,0.2902
+Almoloya,10,ubicacion,0.2842
+Almoloya,10,mezcla,0.2818
+Almoloya,10,media_resto,0.6355
+Apan,1,lgbm,0.1931
+Apan,1,rf,0.138
+Apan,1,enet,0.6044
+Apan,1,ensamble,0.3119
+Apan,1,ubicacion,0.1201
+Apan,1,mezcla,0.216
+Apan,1,media_resto,0.9623
+Calpulalpan,30,lgbm,0.4811
+Calpulalpan,30,rf,0.4172
+Calpulalpan,30,enet,0.5831
+Calpulalpan,30,ensamble,0.4672
+Calpulalpan,30,ubicacion,0.4108
+Calpulalpan,30,mezcla,0.4365
+Calpulalpan,30,media_resto,1.2742
+Chignahuapan,71,lgbm,0.6405
+Chignahuapan,71,rf,0.6284
+Chignahuapan,71,enet,1.1528
+Chignahuapan,71,ensamble,0.7513
+Chignahuapan,71,ubicacion,0.5806
+Chignahuapan,71,mezcla,0.6123
+Chignahuapan,71,media_resto,1.2217
+Cuautepec de Hinojosa,5,lgbm,0.3629
+Cuautepec de Hinojosa,5,rf,0.3111
+Cuautepec de Hinojosa,5,enet,0.3854
+Cuautepec de Hinojosa,5,ensamble,0.3429
+Cuautepec de Hinojosa,5,ubicacion,0.2964
+Cuautepec de Hinojosa,5,mezcla,0.3165
+Cuautepec de Hinojosa,5,media_resto,0.6803
+Emiliano Zapata,3,lgbm,0.4211
+Emiliano Zapata,3,rf,0.4655
+Emiliano Zapata,3,enet,0.5429
+Emiliano Zapata,3,ensamble,0.4748
+Emiliano Zapata,3,ubicacion,0.5318
+Emiliano Zapata,3,mezcla,0.5025
+Emiliano Zapata,3,media_resto,0.4655
+Nanacamilpa de Mariano Arista,1,lgbm,0.6051
+Nanacamilpa de Mariano Arista,1,rf,0.5175
+Nanacamilpa de Mariano Arista,1,enet,0.9229
+Nanacamilpa de Mariano Arista,1,ensamble,0.6819
+Nanacamilpa de Mariano Arista,1,ubicacion,0.6578
+Nanacamilpa de Mariano Arista,1,mezcla,0.6698
+Nanacamilpa de Mariano Arista,1,media_resto,1.466
+Singuilucan,16,lgbm,1.0019
+Singuilucan,16,rf,1.1669
+Singuilucan,16,enet,1.3757
+Singuilucan,16,ensamble,1.1752
+Singuilucan,16,ubicacion,0.6488
+Singuilucan,16,mezcla,0.8964
+Singuilucan,16,media_resto,1.0743
+Tepeapulco,1,lgbm,0.8928
+Tepeapulco,1,rf,0.6213
+Tepeapulco,1,enet,0.5235
+Tepeapulco,1,ensamble,0.6792
+Tepeapulco,1,ubicacion,1.3538
+Tepeapulco,1,mezcla,1.0165
+Tepeapulco,1,media_resto,0.4982

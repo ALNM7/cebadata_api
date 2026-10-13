@@ -1,0 +1,22 @@
+[OK ] maestro tiene 197 parcelas
+[OK ] IDs unicos en maestro
+[OK ] 138 parcelas de entrenamiento
+[OK ] 59 parcelas de prediccion
+[OK ] todas las parcelas de entrenamiento tienen rendimiento
+[OK ] ninguna parcela de prediccion tiene rendimiento (esta oculto)
+[OK ] rendimientos en rango plausible (1.5 a 6.5 t/ha)
+[OK ] s2: las 197 parcelas presentes
+[OK ] s2: sin observaciones duplicadas por parcela-fecha
+[OK ] landsat: las 197 parcelas presentes
+[OK ] landsat: sin observaciones duplicadas por parcela-fecha
+[OK ] planet: las 197 parcelas presentes
+[OK ] planet: sin observaciones duplicadas por parcela-fecha
+[OK ] s2 no arrastra columnas de VI6T
+[OK ] tras filtrar nubosidad, menos de 1 % de NDVI nulo en S2
+[OK ] toda parcela tiene al menos 10 obs S2 limpias dentro del ciclo 2025
+[OK ] clima completo: 197 parcelas x 4 anios x 12 meses
+[OK ] clima sin valores faltantes
+[OK ] precipitacion mensual en rango (0 a 1000 mm)
+[OK ] temperaturas en rango plausible
+[OK ] topografia completa para las 197 parcelas
+[OK ] elevaciones en rango del altiplano (2000 a 3200 m)
